@@ -1,0 +1,4 @@
+﻿spam = 2
+if spam < 5:
+    print("Hello World")
+    spam = spam + 1

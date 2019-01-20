@@ -1,0 +1,147 @@
+import pandas
+import Levenshtein as l
+from sqlalchemy import create_engine
+import urllib
+import numpy as np
+
+
+SQL_invoices = """select
+i.TxnID, i.RefNumber, I.ShipDate, I.Subtotal, i.CustomerRefListID, 
+i.ShipAddressAddr2,i.ShipAddressAddr3,i.ShipAddressAddr4,
+c.ShipAddressAddr1 'custaddr1', c.ShipAddressAddr2 'custaddr2', 
+c.ShipAddressAddr3 'custaddr3', c.ShipAddressAddr4 'custaddr4'
+from
+dbo.Drummac2_Invoice i left join
+dbo.Drummac_Invoice i2 on i2.TxnID = i.TxnID inner join
+dbo.Drummac2_Customer c on c.ListID = i.CustomerRefListID
+where
+i2.TxnID is null"""
+
+def sql_invoicesQ(table1,table2):
+    """
+    select
+    i.TxnID, i.RefNumber, I.ShipDate, I.Subtotal, i.CustomerRefListID, 
+    i.ShipAddressAddr2,i.ShipAddressAddr3,i.ShipAddressAddr4,
+    c.ShipAddressAddr1 'custaddr1', c.ShipAddressAddr2 'custaddr2', 
+    c.ShipAddressAddr3 'custaddr3', c.ShipAddressAddr4 'custaddr4'
+    from
+    dbo.table1_Invoice i left join
+    dbo.table2_Invoice i2 on i2.TxnID = i.TxnID inner join
+    dbo.table1_Customer c on c.ListID = i.CustomerRefListID
+    where
+    i2.TxnID is null
+    """
+    
+    #table1='Drummac'
+    SQL_invoicesQ="select i.TxnID, i.RefNumber, I.ShipDate, I.Subtotal, i.CustomerRefListID,\n"
+    SQL_invoicesQ=SQL_invoicesQ + "i.ShipAddressAddr2,i.ShipAddressAddr3,i.ShipAddressAddr4,\n"
+    SQL_invoicesQ=SQL_invoicesQ + "c.ShipAddressAddr1 'custaddr1', c.ShipAddressAddr2 'custaddr2',\n" 
+    SQL_invoicesQ=SQL_invoicesQ + "c.ShipAddressAddr3 'custaddr3', c.ShipAddressAddr4 'custaddr4'\n"
+    SQL_invoicesQ=SQL_invoicesQ + "from\n"
+    SQL_invoicesQ=SQL_invoicesQ + "dbo." + table1 + "_Invoice i left join\n"
+    SQL_invoicesQ=SQL_invoicesQ + "dbo." + table2 + "_Invoice i2 on i2.TxnID=i.TxnID inner join\n"
+    SQL_invoicesQ=SQL_invoicesQ + "dbo." + table1 + "_Customer c on c.ListID=i.CustomerRefListID\n"
+    SQL_invoicesQ=SQL_invoicesQ + "where i2.TxnID is null"  
+
+    return SQL_invoicesQ
+ 
+ 
+
+SQL_new_customers = """select distinct
+ISNULL(c.ParentRefListID,c.ListID) 'ListID', c.BillAddressCity, c.BillAddressAddr1, c.BillAddressAddr2, c.BillAddressAddr3, 
+c.BillAddressState, c.Email, c.Fax, c.FirstName, c.LastName,c.Phone, c.AltPhone, c.BillAddressPostalCode
+from
+dbo.Drummac2_Invoice i left join
+dbo.Drummac_Invoice i2 on i2.TxnID = i.TxnID inner join
+dbo.Drummac2_Customer c on c.ListID = i.CustomerRefListID left join
+dbo.Drummac_Customer c2 on ISNULL(c.ParentRefListID,c.ListID) = ISNULL(c2.ParentRefListID,c2.ListID)
+where
+i2.TxnID is null and
+c2.ListID is null"""
+
+def SQL_new_customersQ(table1,table2):
+    #table1='Drummac'
+    SQL_new_customersQ="select distinct ISNULL(c.ParentRefListID,c.ListID) 'ListID', c.BillAddressCity, c.BillAddressAddr1, c.BillAddressAddr2, c.BillAddressAddr3,\n"
+    SQL_new_customersQ=SQL_new_customersQ + "c.BillAddressState,c.Email,c.Fax,\n"
+    SQL_new_customersQ=SQL_new_customersQ + "c.FirstName, c.LastName,\n" 
+    SQL_new_customersQ=SQL_new_customersQ + "c.Phone, c.AltPhone, c.BillAddressPostalCode\n"
+    SQL_new_customersQ=SQL_new_customersQ + "from\n"
+    SQL_new_customersQ=SQL_new_customersQ + "dbo." + table1 + "_Invoice i left join\n"
+    SQL_new_customersQ=SQL_new_customersQ + "dbo." + table2 + "_Invoice i2 on i2.TxnID=i.TxnID inner join\n"
+    SQL_new_customersQ=SQL_new_customersQ + "dbo." + table1 + "_Customer c on c.ListID=i.CustomerRefListID left join\n"
+    SQL_new_customersQ=SQL_new_customersQ + "dbo." + table2 + "_Customer c2 on ISNULL(c.ParentRefListID,c.ListID) = ISNULL(c2.ParentRefListID,c2.ListID)\n"
+    SQL_new_customersQ=SQL_new_customersQ + "where i2.TxnID is null and c2.ListID is null"  
+
+    return SQL_new_customersQ
+
+
+
+    SQL_invoice_line = """select
+il.txnID, i.RefNumber, il.CustomerRefListID, il.InvoiceLineAmount, 
+il.InvoiceLineDesc, ISNULL(il.InvoiceLineQuantity,1) 'InvoiceLineQuantity', il.InvoiceLineRate,
+il.InvoiceLineItemRefFullName, lm.WindRiverID, lm.[Wind River Item]
+
+from
+dbo.Drummac2_Invoice i 
+inner join
+dbo.Drummac2_InvoiceLine il on i.TxnID = il.TxnID 
+left join
+Drummac_LINE_MAPPING lm on il.InvoiceLineItemRefFullName = lm.Name  
+
+left join
+dbo.Drummac_Invoice i2 on i2.TxnID = i.TxnID
+where
+i2.TxnID is null and InvoiceLineItemRefFullName is not null and 
+ISNULL(InvoiceLineAmount,0) <> 0 """
+
+
+
+
+
+def SQL_invoice_lineQ(table1,table2):
+    #table1='Drummac'
+    SQL_invoice_lineQ="select il.txnID, i.RefNumber, il.CustomerRefListID, il.InvoiceLineAmount, \n"
+    SQL_invoice_lineQ=SQL_invoice_lineQ + "il.InvoiceLineDesc, ISNULL(il.InvoiceLineQuantity,1) 'InvoiceLineQuantity', il.InvoiceLineRate,\n"
+    SQL_invoice_lineQ=SQL_invoice_lineQ + "il.InvoiceLineItemRefFullName, lm.WindRiverID, lm.[Wind River Item]\n"
+    SQL_invoice_lineQ=SQL_invoice_lineQ + "from\n"
+    SQL_invoice_lineQ=SQL_invoice_lineQ + "dbo." + table1 + "_Invoice i inner join\n"
+    SQL_invoice_lineQ=SQL_invoice_lineQ + "dbo." + table1 + "_InvoiceLine il on i.TxnID=il.TxnID left join\n"
+    SQL_invoice_lineQ=SQL_invoice_lineQ + "dbo." + table2 + "_LINE_MAPPING lm on il.InvoiceLineItemRefFullName = lm.Name left join\n"
+    SQL_invoice_lineQ=SQL_invoice_lineQ + "dbo." + table2 + "_Invoice i2 on i2.TxnID = i.TxnID\n"
+    SQL_invoice_lineQ=SQL_invoice_lineQ + "where InvoiceLineItemRefFullName is not null and\n"
+    SQL_invoice_lineQ=SQL_invoice_lineQ + "ISNULL(InvoiceLineAmount,0) <> 0"  
+
+    return SQL_invoice_lineQ
+
+SQL_existing_cust_jobsites = """select
+i.TxnID,js.jobsiteid, js._MarthaJobsiteId, js._MergedJobsite, j.custid, 
+js.addrline1,c.ListID, cc._MarthaCustId, cc._MergedCustomer
+from
+dbo.Drummac2_Invoice i inner join
+dbo.Drummac2_Customer c on c.ListID = i.CustomerRefListID left join
+AcquisitionTools.dbo.customers j on j.oldcustid = ISNULL(c.ParentRefListID,c.ListID) left join
+dbo.Drummac_Invoice i2 on i2.TxnID = i.TxnID left join
+AcquisitionTools.dbo.jobsites js on j.custid = js.custid left join
+AcquisitionTools.dbo.customers cc on cc.custid = j.custid
+where
+i2.TxnID is null
+and j.custid is not null"""
+
+
+def SQL_existing_cust_jobsitesQ(table1,table2):
+    #table1='Drummac'
+    SQL_existing_cust_jobsitesQ="select i.TxnID,js.jobsiteid, js._MarthaJobsiteId, js._MergedJobsite, j.custid,\n"
+    SQL_existing_cust_jobsitesQ=SQL_existing_cust_jobsitesQ + "js.addrline1,c.ListID, cc._MarthaCustId, cc._MergedCustomer\n"
+    SQL_existing_cust_jobsitesQ=SQL_existing_cust_jobsitesQ + "from\n"
+    SQL_existing_cust_jobsitesQ=SQL_existing_cust_jobsitesQ + "dbo." + table1 + "_Invoice i inner join\n"
+    SQL_existing_cust_jobsitesQ=SQL_existing_cust_jobsitesQ + "dbo." + table1 + "_Customer c on c.ListID = i.CustomerRefListID left join\n"
+    SQL_existing_cust_jobsitesQ=SQL_existing_cust_jobsitesQ + "AcquisitionTools.dbo.customers j on j.oldcustid = ISNULL(c.ParentRefListID,c.ListID) left join\n"
+    SQL_existing_cust_jobsitesQ=SQL_existing_cust_jobsitesQ + "dbo." + table2 + "_Invoice i2 on i2.TxnID = i.TxnID left join\n"
+    SQL_existing_cust_jobsitesQ=SQL_existing_cust_jobsitesQ + "AcquisitionTools.dbo.jobsites js on j.custid = js.custid left join\n"
+    SQL_existing_cust_jobsitesQ=SQL_existing_cust_jobsitesQ + "AcquisitionTools.dbo.customers cc on cc.custid = j.custid\n"  
+    SQL_existing_cust_jobsitesQ=SQL_existing_cust_jobsitesQ + "where\n"
+    SQL_existing_cust_jobsitesQ=SQL_existing_cust_jobsitesQ + "i2.TxnID is null\n"
+    SQL_existing_cust_jobsitesQ=SQL_existing_cust_jobsitesQ + "and j.custid is not null"
+
+    
+    return SQL_existing_cust_jobsitesQ

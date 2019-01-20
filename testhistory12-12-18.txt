@@ -1,0 +1,1813 @@
+ 1/1: w=[1,2,3]
+ 1/2: w[-1]
+ 1/3: w[-1:]
+ 1/4: w[-3:]
+ 1/5: %hist
+ 1/6: w=[1,2,3]
+ 1/7: z=0
+ 1/8:
+for x in w:
+    print(x)
+ 1/9:
+for x in w:
+    print(x)
+    z=x+(x-1)
+    print(z)
+1/10: z=0
+1/11:
+for x in w:
+    print(x)
+    z=x+(x-1)
+    print(z)
+1/12:
+for x in w:
+    print(x)
+    z=x+(z)
+    print(z)
+1/13: z=0
+1/14:
+for x in w:
+    print(x)
+    z=x+(z)
+    print(z)
+1/15: z=0
+1/16:
+for x in w:
+    print(x)
+    z=x+(z)
+    print(z)
+1/17:
+for x in w:
+    print('x=',x)
+    z=x+(z)
+    print('z=',z)
+1/18: z=0
+1/19:
+for x in w:
+    print('x=',x)
+    z=x+(z)
+    print('z=',z)
+1/20: %hist
+ 2/1:
+for x in w:
+    print('x=',x)
+    z=z-x
+    print('z=',z)
+ 2/2: z=6
+ 2/3: w=[1,2,3]
+ 2/4:
+for x in w:
+    print('x=',x)
+    z=z-x
+    print('z=',z)
+ 2/5: !start emacs
+ 2/6:
+# This assigns a three-element list to x
+x = [1, 2, 3]
+ 2/7:
+x=[1,2,3,4,
+    5,6,7]
+ 2/8: x
+ 2/9: print (x)
+ 3/1: ls
+ 3/2: print("Hello World\n")
+ 3/3:
+print("Hello World\n")
+print("This is our new text file\n")
+print("and this is another line.\n")
+print("Why? Because we can.\n")
+ 4/1: !shutdown now
+ 4/2: shutdown -s
+ 4/3: !shutdown -s
+ 5/1: !control
+ 5/2: !start firefox
+ 5/3: !pwd
+ 5/4: !cd documents
+ 5/5: !pwd
+ 5/6: !cd /cygdrive/c/users/ray/documents
+ 5/7: |!pwd
+ 5/8: !pwd
+ 5/9: help
+5/10: %help
+5/11: help()
+5/12: magic
+75/1: spam = True     # (1)
+75/2: spam
+75/3: true            # (2)
+75/4: True =2+2
+75/5: 42 == 42
+75/6: 42 == 99
+75/7: 2 != 3
+75/8: 2 != 2
+75/9: 'hello' == 'hello'
+75/10: 'hello' == 'Hello'
+75/11:  'dog' != 'cat'
+75/12: True == True
+75/13:  True != False
+75/14: 42 == 42.0
+75/15: 42 == 42.1
+75/16: 42 == '42'
+75/17:  42 < 100
+75/18:  42 > 100
+75/19: 42 < 42
+75/20: eggCount = 42
+75/21: eggCount <= 42
+75/22: myAge = 29
+75/23: myAge >= 10
+75/24: True and True
+75/25: True and False
+75/26: True and True
+75/27: True and False
+75/28: False and True
+75/29: False and False
+75/30: False or True
+75/31: #The Or Operators Truth Table
+75/32: True or True
+75/33: True or False
+75/34: False or True
+75/35: False or False
+75/36: not True
+75/37: #The not Operators Truth Table
+75/38: not False
+75/39: #Mixing Boolean and Comparison Operators
+75/40: magic
+75/41: lsmagic
+75/42: %hist
+75/43: True and True
+75/44: 2 + 2 == 4 and not 2 + 2 == 5 and 2 * 2 == 2 + 2
+76/1: import openpyxl
+76/2: print('Hello')
+77/1: spam = ['cat', 'bat', 'rat', 'elephant']
+77/2: spam[1]
+77/3: spam[1.0]
+77/4: spam[int(1.0)]
+77/5: spam = [['cat', 'bat'], [10, 20, 30, 40, 50]]
+77/6: spam[0]
+77/7: spam[0][1]
+78/1: ls
+78/2: spam = [['cat', 'bat'], [10, 20, 30, 40, 50]]
+78/3: spam[0]
+78/4: spam[0][0]]
+78/5: spam[0][0]
+78/6: spam[1][4]
+78/7: spam = ['cat', 'bat', 'rat', 'elephant']
+78/8: spam[-1]
+78/9: spam[-3]
+78/10: 'The '+ spam[-1] + 'is afraid of the ' + spam[-3 +] '.'
+78/11: 'The '+ spam[-1] + 'is afraid of the ' + spam[-3 + '.']
+78/12: 'The '+ spam[-1] + 'is afraid of the ' + spam[-3] + '.'
+78/13: alist=['This ','is ','a','list']
+78/14: alist
+78/15: alist[0]
+78/16: alist[:]
+78/17: alist[0:]
+78/18: alist[1:]
+78/19: alist[:4]
+78/20: alist[2:]
+78/21: alist[-2:]
+78/22: alist[-3:]
+78/23: alist[1:]
+78/24: alist[3:]
+78/25: alist[:3]
+78/26: alist[-2:-1]
+78/27: alist[-1:2]
+78/28: alist[-2:-1]
+78/29: alist[-2:1]
+78/30: alist[-4:1]
+78/31: alist[:1]
+78/32: len(alist)
+78/33: alist
+78/34: alist[3]='shorty-list'
+78/35: alist
+78/36: !start excel
+78/37: alist2=['Could','be ','anothter','list']
+78/38: spam=alist+alist2
+78/39: spam
+78/40:
+for i in [0, 1, 2, 3]:
+    print(i)
+78/41: supplies = ['pens', 'staplers', 'flame-throwers', 'binders']
+78/42: supplies
+78/43:
+for i in range(len(supplies)):
+    print('Index ' + str(i) + ' in supplies is: ' + supplies[i])
+78/44: 'howdy' in ['hello', 'hi', 'howdy', 'heyas']
+78/45: spam = ['hello', 'hi', 'howdy', 'heyas']
+78/46: spam
+78/47: cat in spam
+78/48: 'cat' in spam
+78/49: 'howdy' not in spam
+78/50: 'cat' not in spam
+78/51: cat = ['fat', 'orange', 'loud']
+78/52: cat
+78/53: size, color, disposition = cat
+78/54: size
+78/55: color
+78/56: dispostion
+78/57: disposition
+78/58:  a, b = 'Alice', 'Bob'
+78/59: a
+78/60: b
+78/61: spam = 42
+78/62: spam=spam+1
+78/63: spam
+78/64: spam = 64
+78/65: spam = spam+1
+78/66: spam = spam+= 1
+78/67: spam = spam += 1
+78/68: spam
+78/69: spam=64
+78/70: spam = spam += 1
+78/71: spam
+78/72: spam =  += 1
+78/73: spam   += 1
+78/74: spam
+78/75: spam = 'Hello'
+78/76: spam += ' world!'
+78/77: spam
+78/78: bacon = ['Zophie']
+78/79: bacon *=3
+78/80: bacon
+78/81: spam = ['hello', 'hi', 'howdy', 'heyas']
+78/82: spam
+78/83: spam.index('heyes')
+78/84: spam
+78/85: spam.index('heyas')
+78/86: spam.index('hello')
+78/87: spam.index('howdy howdy howdy')
+78/88: spam = ['Zophie', 'Pooka', 'Fat-tail', 'Pooka']
+78/89: spam.index('Pooka')
+79/1: spam[100]
+79/2: spam = ['cat', 'bat', 'rat', 'elephant']
+79/3: spam[100]
+79/4: spam[1]
+79/5: spam[1.0]
+79/6: hist
+79/7: spam.append('moose')
+79/8: spam
+79/9: spam.insert(1, 'moose')
+79/10: spam
+79/11: eggs='hello'
+79/12: eggs.append('world')
+79/13: spam.remove('moose')
+79/14: spam
+79/15: spam.remove('moose')
+79/16: spam
+79/17: spam = [2, 5, 3.14, 1, -7]
+79/18: spam.sort()
+79/19: spam
+79/20: spam = ['ants', 'cats', 'dogs', 'badgers', 'elephants']
+79/21: spam.sort()
+79/22: spam
+79/23: spam.sort(reverse=True)
+79/24: spam
+79/25: spam = [1, 3, 2, 4, 'Alice', 'Bob']
+79/26: spam.sort(reverse=True)
+79/27: spam = ['Alice', 'ants', 'Bob', 'badgers', 'Carol', 'cats']
+79/28: spam.sort()
+79/29: spam = ['a', 'z', 'A', 'Z']
+79/30: spam.sort(key=str.lower)
+79/31: spam
+79/32: name = 'Zophie'
+79/33: name[0]
+79/34: name[-2]
+79/35: name[0:4]
+79/36: 'Zo' in name
+79/37: 'z' in name
+79/38: 'p' not in name
+79/39:
+for i in name:
+        print('* * * ' + i + ' * * *')
+79/40: name = 'Zophie a cat'
+79/41: name[7] = 'the'
+79/42: name = 'Zophie a cat'
+79/43: newName = name[0:7] + 'the' + name[8:12]
+79/44: newName
+79/45: eggs = [1, 2, 3]
+79/46: eggs = [4, 5, 6]
+79/47:
+eggs = [1, 2, 3]
+del eggs[2]
+del eggs[1]
+del eggs[0]
+eggs.append(4)
+eggs.append(5)
+eggs.append(6)
+79/48: eggs
+79/49: eggs = ('hello', 42, 0.5)
+79/50: eggs[0]
+79/51: eggs[1:3]
+79/52: len(eggs)
+79/53: eggs = ('hello', 42, 0.5)
+79/54: eggs[1]='stupid'
+79/55: type(('hello',))
+79/56: alist=['cat', 'dog', 5]
+79/57: tuple(['cat', 'dog', 5])
+79/58: alist
+79/59: list(('cat', 'dog', 5))
+79/60: backToList=list(('cat', 'dog', 5))
+79/61: backToList
+79/62: changeToTuple=tuple(['cat', 'dog', 5])
+79/63: changeToTuple
+79/64: stringToList=list('hello')
+79/65: stringToList
+79/66: spam=42
+79/67: cheese=spam
+79/68: spam=100
+79/69: spam
+79/70: cheese
+79/71: spam = [0, 1, 2, 3, 4, 5]
+79/72: cheese = spam
+79/73: cheese[1]='Hello'
+79/74: spam
+79/75: cheese
+79/76: import copy
+79/77: spam = ['A', 'B', 'C', 'D']
+79/78: cheese = copy.copy(spam)
+79/79: cheese
+79/80: cheese[1]=42
+79/81: spam
+79/82: cheese
+79/83: spam
+79/84: myCat = {'size': 'fat', 'color': 'gray', 'disposition': 'loud'}
+79/85: myCat
+79/86: myCat['size']
+79/87: 'My cat has ' + myCat['color'] + ' fur.'
+79/88: spam = {12345: 'Luggage Combination', 42: 'The Answer'}
+79/89: spam
+79/90: spam=spam2
+79/91: spam2=spam
+79/92: spam2.append('77':'Room'}
+79/93: spam2={12345: 'Luggage Combination', 42: 'This is different'}
+79/94: spam
+79/95: spam2.append(77:'Room')
+79/96: spam2[555]='Home'
+79/97: spam2
+80/1: spam = ['cats', 'dogs', 'moose']
+80/2: bacon = ['dogs', 'moose', 'cats']
+80/3: spam == bacon
+80/4: eggs = {'name': 'Zophie', 'species': 'cat', 'age': '8'}
+80/5: ham = {'species': 'cat', 'age': '8', 'name': 'Zophie'}
+80/6: eggs == ham
+80/7: spam = {'name': 'Zophie', 'age': 7}
+80/8: spam['color']
+80/9:
+for v in spam.values():
+        print(v)
+80/10: spam = {'color': 'red', 'age': 42}
+80/11:
+for v in spam.values():
+        print(v)
+80/12:
+ for k in spam.keys():
+        print(k)
+80/13:
+for i in spam.items():
+        print(i)
+80/14:
+spam = {'color': 'red', 'age': 42}
+spam.keys()
+dict_keys(['color', 'age'])
+list(spam.keys())
+80/15:
+spam = {'color': 'red', 'age': 42}
+spam.keys()
+
+list(spam.keys())
+80/16: dict_keys(['color', 'age'])
+80/17: spam.keys()
+81/1: spam = {'color': 'red', 'age': 42}
+81/2:
+for k, v in spam.items():
+        print('Key: ' + k + ' Value: ' + str(v))
+81/3: spam.keys()
+81/4: list(spam.keys())
+81/5: hist
+81/6: 'name' in spam.keys()
+81/7: 'name' in spam.keys()
+81/8: spam = {'name': 'Zophie', 'age': 7}
+81/9: 'name' in spam.keys()
+81/10: 'color' in spam.keys()
+81/11: 'color' not in spam.keys()
+81/12: 'color' in spam
+81/13: picnicItems = {'apples': 5, 'cups': 2}
+81/14:  'I am bringing ' + str(picnicItems.get('cups', 0)) + ' cups.'
+81/15: 'I am bringing ' + str(picnicItems.get('eggs', 0)) + ' eggs.'
+81/16: picnicItems = {'apples': 5, 'cups': 2}
+81/17: 'I am bringing ' + str(picnicItems['eggs']) + ' eggs.'
+81/18: spam = {'name': 'Pooka', 'age': 5}
+81/19:
+if 'color' not in spam:
+    spam['color'] = 'black'
+81/20: spam
+81/21: spam = {'name': 'Pooka', 'age': 5}
+81/22: spam
+81/23: spam.setdefault('color','black')
+81/24: spam
+99/1: spam={'bar': 100}
+99/2: spam['foo']
+99/3: inv = {'gold coin': 42, 'rope': 1}
+99/4: inv
+99/5: inv.keys
+99/6: print(inv.keys)
+99/7: for k in inv.keys();
+99/8:
+for k in inv.keys():
+    print(k)
+99/9:
+for i in inv.items():
+    print(i)
+99/10:
+for v in inv.values():
+    print(v)
+99/11:
+for k, v in inv.items():
+    print('Key: '+ k + 'Value: " str(v))
+99/12:
+for k, v in inv.items():
+    print('Key: '+ k + 'Value: ' str(v))
+99/13:
+for k, v in inv.items():
+    print('Key: '+ k + 'Value: ' str(v))
+99/14: inv
+99/15:
+for k, v in inv.items():
+    print('Key: '+ k)
+99/16:
+for k, v in inv.items():
+    print('Key: '+ k + 'Value: ' + str(v))
+99/17:
+for k, v in inv.items():
+    print('Key: '+ k + ' Value: ' + str(v))
+99/18: list(inv.keys())
+99/19: dragonLoot
+99/20: dragonLoot = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby']
+99/21: dragonLoot
+99/22:
+for k in dragonLoot:
+    print(k)
+99/23: inv
+99/24: k
+99/25: k in inv.keys()
+99/26: for v in inv.items()
+99/27: for v in inv.items()
+99/28:
+for v in inv.items():
+    print(va)
+99/29:
+for v in inv.items():
+    print(v)
+99/30:
+for v in inv.values():
+    print(v)
+99/31: v=v+1
+99/32: print(v)
+99/33: k
+99/34: dragonLoot
+99/35:
+for n in dragonLoot:
+    print(n)
+99/36:
+for n in dragonLoot:
+    print(n)
+99/37:
+for n in dragonLoot:
+    print(n)
+    for k in inv.key()
+99/38:
+for n in dragonLoot:
+    print(n)
+    for k in inv.key():
+        print(k)
+99/39: inv
+99/40: inv
+99/41:
+for n in dragonLoot:
+    print(n)
+    for k in inv.key():
+        print(k)
+99/42:
+for k in inv.key():
+    print(k)
+99/43: k
+99/44:
+for k,v in inv.key():
+    print(k)
+99/45:
+for k in inv.key():
+    print(k)
+99/46: k
+99/47: inv
+99/48: for k in inv.key()
+99/49: inv
+99/50: invi
+1034/1: inv
+1034/2: inv = {'gold coin': 42, 'rope': 1}
+1034/3: inv
+1034/4:
+for k in inv.keys():
+    print(k)
+1034/5:
+for k,v in inv.itemsp():
+    print(k)
+    print(v)
+1034/6:
+for k,v in inv.items():
+    print(k)
+    print(v)
+1034/7: dragonLoot
+1034/8: dragonLoot = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby']
+1034/9: dragonLoot
+1034/10:
+for k in dragonLoot:
+    print(k)
+1034/11: inv
+1034/12: k
+1034/13: if k in inv.keys()
+1034/14:
+if k, v in inv.items():
+    print("yes")
+1034/15:
+for k, v in inv.items():
+    print("yes")
+1034/16: inv
+1034/17: inv.setdefault('gold coin', 42)
+1034/18: inv
+1034/19: inv.setdefault('gold coin', 42+1)
+1034/20: inv.setdefault('ruby', 1)
+1034/21: inv
+1034/22: k
+1034/23: inv.setdefault(k, 1)
+1034/24: inv={'gold coin': 42, 'rope': 1}
+1034/25: k
+1034/26:
+for k in dragonLoot:
+    print(k)
+1034/27: inv
+1034/28: inv.setdefault(k,1)
+1034/29: inv
+1034/30: k='gold coin'
+1034/31: inv.setdefault(k,1)
+1034/32: inv[k]=42+1
+1034/33: inv
+1034/34: inv[k]>1
+1034/35: inv[k]=inv[k]+1
+1034/36: inv[k]
+1034/37: inv
+1034/38: #in a dict you manipulate the keys to get at the values
+1034/39: hist
+1034/40: pwd
+1034/41: %history -g -f testhistory.txt
+1035/1: inv = {'gold coin': 42, 'rope': 1}
+1035/2: dragonLoot = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby']
+1035/3: inv
+1035/4: dragonLoot
+1035/5:
+for k in dragonLoot:
+    print(k)
+1035/6:
+for k in dragonLoot:
+    print(k)
+    inv.setdefault(k,1)
+1035/7: inv
+1035/8:
+for k in dragonLoot:
+    print(k)
+    inv.setdefault(k,1)
+    if inv[k]>1:
+        inv[k]=inv[k]+1
+1035/9: inv
+1035/10: %history -g -f testhistory.txt
+1035/11: %history -g -f testhistory.txt
+1035/12: print("Hello there!\nHow are you?\nI\'m doing fine.")
+1035/13:  print(r'That is Carol\'s cat.')
+1035/14: spam = 'Hello world!'
+1035/15: spam[0]
+1035/16: spam[4]
+1035/17: spam[-1]
+1035/18: spam[0:5]
+1035/19: spam[:5]
+1035/20: spam[6:]
+1035/21: spam
+1035/22: fizz=spam[0:5]
+1035/23: fizz
+1035/24: 'Hello' in spam
+1035/25: 'HELLO' in spam
+1035/26: 'cats' not in 'cats and dogs'
+1035/27: spam
+1035/28: spam.upper()
+1035/29: spam.lower()
+1035/30: 'HELLO'.lower()
+1035/31: 'HELLO'.lower().islower()
+1035/32: spam
+1035/33: spam.islower()
+1035/34: spam.isupper()
+1035/35: 'HELLO'.isupper()
+1035/36: 'abc12345'.islower()
+1035/37: '12345'.islower()
+1035/38: '12345'.isupper()
+1035/39: '    '.isspace()
+1035/40: 'This Is Title Case'.istitle()
+1200/1: 'Hello world!'.endswith('Hello world!')
+1200/2: spam = '    Hello World     '
+1200/3: spam.strip()
+1200/4: spam
+1200/5: spam.lstrip
+1200/6: spam.lstrip()
+1200/7: spam.rstrip()
+1200/8: spam = 'SpamSpamBaconSpamEggsSpamSpam'
+1200/9: spam.strip('ampS')
+1200/10: import pyperclip
+1200/11: import pyperclip
+1200/12: pyperclip.copy('Hello world')
+1200/13: pyperclip.paste()
+1200/14: %history -g -f testHistory.txt
+1200/15: import os
+1200/16: pwd
+1200/17: text=pyperclip.paste()
+1200/18: text
+1200/19: text
+1200/20: text.pyperclip.paste()
+1200/21: import pyperclip
+1200/22: text.pyperclip.paste()
+1200/23: text
+1716/1: import pyperclip
+1716/2: text=pyperclip.paste()
+1716/3: text
+1716/4: lines=text.split('\n')
+1716/5: lines
+1716/6:
+for i in range(len(lines)):
+    lines[i]='* '+lines[i]
+1716/7: lines
+1716/8: pyperclip.copy(text)
+1716/9: lines
+1716/10: text='\n'.join(lines)
+1716/11: text
+1716/12: pyperclip.copy(text)
+1716/13: text=pyperclip.paste()
+1716/14: text
+1758/1:
+tableData = [['apples', 'oranges', 'cherries', 'banana'],
+             ['Alice', 'Bob', 'Carol', 'David'],
+             ['dogs', 'cats', 'moose', 'goose']]
+1758/2: tableData
+1758/3: firstColumn=tableData[0]
+1758/4: firstColumn
+1758/5: secondColumn=tableData[1]
+1758/6: secondColumn
+1758/7: thirdColumn=tableData[2]
+1758/8: thirdColumn
+1758/9: thirdColumn[0]
+1758/10: len(thirdColumn[0])
+1758/11: pprint.pprint(firstColumn)
+1758/12: import pprint
+1758/13: pprint.pprint(firstColumn)
+1758/14: firstColumn.insert(0,firstColumn)
+1758/15: pprint.pprint(firstColumn)
+1758/16: import os
+1758/17: os.getcwd()
+1758/18: os.chdir('C:\\Users\\Ray\\documents\\projects\\python
+1758/19: os.chdir('C:\\Users\\Ray\\documents\\projects\\python')
+1758/20: os.getcwd()
+1758/21: ls
+1758/22:
+for i in thirdColumn:
+    print(thirdColumn[i])
+1758/23:
+for i in range(thirdColumn):
+    print(thirdColumn[i])
+1758/24: for in range(5):
+1758/25:
+for i in range(5):
+    print('Hello')
+1758/26: firstColumn
+1758/27:
+for i in range(5):
+    print(firstColumn[i])
+1758/28:
+for i in range(5):
+    print(len(firstColumn[i]))
+1758/29: colWidth[]
+1758/30: colWidth=[]
+1758/31: colwidth[0]=5
+1758/32: colwidth=[]
+1758/33: colwidth
+1758/34: colwidth[0]=5
+1758/35: colwidth=colwidth+5
+1758/36: colwidth=[5,6,7]
+1758/37: colwidth
+1758/38: n=2
+1758/39: colwidth=[5,6,7,n]
+1758/40: colwidth
+1758/41: colwidth.append(n)
+1758/42: colwidth
+1758/43: colwidth.sort
+1758/44: colwidth
+1758/45: colwidth.sort(reverse=True)
+1758/46: colwidth
+1758/47: colwidth[0]
+1758/48: %history -g -f testhistory.txt
+1758/49:
+tableData = [['apples', 'oranges', 'cherries', 'banana'],
+             ['Alice', 'Bob', 'Carol', 'David'],
+             ['dogs', 'cats', 'moose', 'goose']]
+1758/50: firstColumn
+1758/51: firstColumn=tableData[0]
+1758/52: firstColumn
+1758/53: len(firstColumn)
+1758/54: countOfColumn=len(firstColumn)
+1758/55: countofColumn
+1758/56: len(firstColumn)
+1758/57: countOfColumn
+1758/58:
+In [28]: for i in range(countOfColumn):
+    ...:     print(len(firstColumn[i]))
+1759/1: ?
+1759/2: import re
+1759/3: phoneNumRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
+1759/4: phoneNumRegex
+1759/5: mo = phoneNumRegex.search('My number is 415-555-4242.)
+1759/6: mo = phoneNumRegex.search('My number is 415-555-4242.)
+1759/7: mo = phoneNumRegex.search('My number is 415-555-4242.)
+1759/8: mo = phoneNumRegex.search('My number is 415-555-4242')
+1759/9: mo.group()
+1759/10: phoneNumRegex = re.compile(r'(\d\d\d)-(\d\d\d-\d\d\d\d)')
+1759/11: phoneNumRegex
+1759/12: mo = phoneNumRegex.search('My number is 415-555-4242.')
+1759/13: mo.group(1)
+1759/14: mo.group(2)
+1759/15: mo.group()
+1759/16: areaCode, mainNumber = mo.groups()
+1759/17: areaCode
+1759/18: mainNumber
+1759/19: phoneNumRegex = re.compile(r'(\(\d\d\d\)) (\d\d\d-\d\d\d\d)')
+1759/20: phoneNumRegex
+1759/21: mo=phoneNumRegex.search('My phone number is (415) 555-4242.')
+1759/22: mo.group(1)
+1759/23: mo.group(2)
+1759/24: heroRegex = re.compile (r'Batman|Tina Fey')
+1759/25: mol=heroRegex.search('Batman and Tina Fey.')
+1759/26: mo1.group()
+1759/27: mol.group()
+1759/28: mo2 = heroRegex.search('Tina Fey and Batman.')
+1759/29: mo2.group()
+1759/30: %history -g -f testhistory.txt
+1759/31: batRegex = re.compile(r'Bat(man|mobile|copter|bat)')
+1759/32: mo= batRegex.search('Batmobile lost a wheel')
+1759/33: mo.group()
+1759/34: mo.group(1)
+1759/35: batRegex = re.compile(r'Bat(wo)?man')
+1759/36: mo1=batRegex.search('The Adventures of Batman')
+1759/37: mo1.group()
+1759/38: mo2=batRegex.search('The Adventures of Batwoman')
+1759/39: mo2.group()
+1759/40: phoneRegex = re.compile(r'(\d\d\d-)?\d\d\d-\d\d\d\d')
+1759/41: mo1 = phoneRegex.search('My number is 415-555-4242')
+1759/42: mo1.group()
+1759/43: mo1 = phoneRegex.search('My number is 555-4242')
+1759/44: mo2.group()
+1759/45: mo1.group()
+1759/46: mo2.group()
+1759/47: mo3 = batRegex.search('The Adventures of Batwowowowoman')
+1759/48: mo3.group()
+1759/49: batRegex = re.compile(r'Bat(wo)?man')
+1759/50: mo2 = batRegex.search('The Adventures of Batwoman')
+1759/51: mo2.group()
+1759/52: mo3 = batRegex.search('The Adventures of Batwowowowoman')
+1759/53: mo3.group()
+1759/54: batRegex = re.compile(r'Bat(wo)*man')
+1759/55: mo2 = batRegex.search('The Adventures of Batman')
+1759/56: mo2.group()
+1759/57: mo3 = batRegex.search('The Adventures of Batwowowowoman')
+1759/58: mo3.group()
+1759/59: batRegex = re.compile(r'Bat(wo)+man')
+1759/60: mo1 = batRegex.search('The Adventures of Batwoman')
+1759/61: mo1.group()
+1759/62: mo3 = batRegex.search('The Adventures of Batwowowowoman')
+1759/63: mo2 = batRegex.search('The Adventures of Batwowowowoman')
+1759/64: mo2.group()
+1759/65: mo3 = batRegex.search('The Adventures of Batman')
+1759/66: mo3==None
+1759/67: %history -g -f testhistory.txt
+1759/68: haRegex = re.compile(r'(Ha){3}')
+1759/69: mo1 = haRegex.search('Ha Ha Ha')
+1759/70: mo1.group()
+1759/71: mo1 = haRegex.search('HaHaHa')
+1759/72: mo1.group()
+1759/73: mo1 = haRegex.search('Ha HaHa')
+1759/74: mo1.group()
+1759/75: mo1 = haRegex.search('Ha HaHaHa Ha')
+1759/76: mo1.group()
+1759/77: mo2 = haRegex.search('Ha HaHa')
+1759/78: mo2==None
+1759/79: greedyHaRegex = re.compile(r'(Ha){3,5}')
+1759/80: mo1 = greedyHaRegex.search('HaHaHaHaHa')
+1759/81: mo1.group()
+1759/82: nongreedyHaRegex = re.compile(r'(Ha){3,5}?')
+1759/83: mo2 = nongreedyHaRegex.search('HaHaHaHaHa')
+1759/84: mo2.group()
+1759/85: mo = phoneNumRegex.search('Cell: 415-555-9999 Work: 212-555-0000')
+1759/86: mo.group()
+1759/87: phoneNumRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
+1759/88: mo = phoneNumRegex.search('Cell: 415-555-9999 Work: 212-555-0000')
+1759/89: mo.group()
+1759/90: phoneNumRegex.findall('Cell: 415-555-9999 Work: 212-555-0000')
+1759/91: phoneNumRegex = re.compile(r'(\d\d\d)-(\d\d\d)-(\d\d\d\d)')
+1759/92: phoneNumRegex.findall('Cell: 415-555-9999 Work: 212-555-0000')
+1759/93: xmasRegex = re.compile(r'\d+\s\w+')
+1759/94:
+xmasRegex.findall('12 drummers, 11 pipers, 10 lords, 9 ladies, 8 maids, 7
+swans, 6 geese, 5 rings, 4 birds, 3 hens, 2 doves, 1 partridge')
+1759/95: xmasRegex.findall('12 drummers, 11 pipers, 10 lords, 9 ladies, 8 maids, 7 swans, 6 geese, 5 rings, 4 birds, 3 hens, 2 doves, 1 partridge')
+1759/96: vowelRegex = re.compile(r'[aeiouAEIOU]')
+1759/97: vowelRegex.findall('Robocop eats baby food. BABY FOOD.')
+1759/98: consonantRegex = re.compile(r'[^aeiouAEIOU]')
+1759/99: consonantRegex.findall('Robocop eats baby food. BABY FOOD.')
+1759/100: %history -g -f testhistory.txt
+1759/101: beginsWithHello = re.compile(r'^Hello')
+1759/102: beginsWithHello.search('Hello world!')
+1759/103: beginsWithHello.search('He said Hello world!')==None
+1759/104: wholeStringIsNum = re.compile(r'^\d+$')
+1759/105: wholeStringIsNum.search('1234567890')
+1759/106: wholeStringIsNum.search('12345xyz67890')==None
+1759/107: wholeStringIsNum.search('12345xyz67890')==None
+1759/108: wholeStringIsNum.search('1234 67890')==None
+1759/109: wholeStringIsNum.search('1234 67890Z')==None
+1759/110: wholeStringIsNum.search('1234 67890Z')==None
+1759/111: wholeStringIsNum.search('1234 67890Z')
+1759/112: wholeStringIsNum.search('123467890')
+1759/113: wholeStringIsNum.search('123467890')==None
+1759/114: atRegex = re.compile(r'.at')
+1759/115: atRegex.findall('The cat in the hat sat on the flat mat.')
+1760/1: beginsWithHello = re.compile(r'^Hello')
+1760/2: import re
+1760/3: beginsWithHello = re.compile(r'^Hello')
+1760/4: beginsWithHello.search('Hello world!)
+1760/5: beginsWithHello.search('Hello world!')
+1760/6: beginsWithHello.search('He siad hello.')==None
+1760/7: endsWithNumber = re.compile(r'\d$')
+1760/8: endsWithNumber.search('Your number is 42')
+1760/9: endsWithNumber.search('Your number is forty two.')==None
+1760/10: endsWithNumber = re.compile(r'\d$')
+1760/11: wholeStringIsNum = re.compile(r'^\d+$')
+1760/12: wholeStringIsNum.search('12345')
+1760/13: wholeStringIsNum.search('123WT45')
+1760/14: %history -g -f testhistory.txt
+1760/15: %history -g -f testhistory.txt
+1760/16: %history -g -f testhistory.txt
+1760/17: wholeStringIsNum.search('12345')==None
+1760/18: atRegex = re.compile(r'.at')
+1760/19: atRegex.findall('The cat in the hat sat on the flat mat.')
+1760/20: import os
+1760/21: os.cwd()
+1760/22: os.curdir()
+1760/23: os.curdir
+1760/24: os.getcwdb()
+1760/25: os.getcwd()
+1760/26: os.chdir('C:\\Users\\Ray\\documents\projects\\python')
+1760/27: os.getcwd()
+1760/28: nameRegex = re.compile(r'First Name: (.*) Last Name: (.*)')
+1760/29: mo=nameRegex.search('First Name: A1 Last Name: Sweigart')
+1760/30: mo.group(1)
+1760/31: mo.group(2)
+1760/32: nongreedyRegex = re.compile(r'<.*?>')
+1760/33: mo=nongreedyRegex.search('<To serve man> for dinner.>')
+1760/34: mo.group
+1760/35: mo.group()
+1760/36: noNewlineRegex = re.compile('.*')
+1760/37:
+noNewlineRegex.search('Serve the public trust.\nProtect the innocent.
+\nUphold the law.').group()
+'Serve the public trust.'
+1760/38:
+noNewlineRegex.search('Serve the public trust.\nProtect the innocent.
+\nUphold the law.').group()
+'Serve the public trust.')
+1760/39:
+noNewlineRegex.search('Serve the public trust.\nProtect the innocent.
+\nUphold the law.').group()
+1760/40: noNewlineRegex.search('Serve the public trust.\nProtect the innocent.\nUphold the law.').group()
+1760/41: NewlineRegex = re.compile('.*',re.DOTALL)
+1760/42:
+
+NewlineRegex.search('Serve the public trust.\nProtect the innocent.\nUphold the law.').group()
+1760/43: robocop = re.compile(r'robocop', re.I)
+1760/44: robocop.search('Robocop is part man, part machine, all cop.').group()
+1760/45: robocop.search('ROBOCOP is part man, part machine, all cop.').group()
+1760/46: namesRegex = re.compile(r'Agent \w+')
+1760/47: namesRegex.sub('CENSORED', 'Agent Alice gave the secret documents to Agent Bob.')
+1760/48:
+phoneRegex = re.compile(r'((\d{3}|\(\d{3}\))?(\s|-|\.)?\d{3}(\s|-|\.)\d{4}
+(\s*(ext|x|ext.)\s*\d{2,5})?)')
+1760/49: phoneRegex = re.compile(r'((\d{3}|\(\d{3}\))?(\s|-|\.)?\d{3}(\s|-|\.)\d{4}(\s*(ext|x|ext.)\s*\d{2,5})?)')
+1760/50:
+phoneRegex = re.compile(r'''(
+    (\d{3}|\(\d{3}\))?            # area code
+    (\s|-|\.)?                    # separator
+    \d{3}                         # first 3 digits
+    (\s|-|\.)                     # separator
+    \d{4}                         # last 4 digits
+    (\s*(ext|x|ext.)\s*\d{2,5})?  # extension
+    )''', re.VERBOSE)
+1760/51: os.getcwd
+1760/52: os.getcwd()
+1760/53: %history -g -f testhistory.txt
+1760/54: possibleNameTitleRegex=re.compile(r'(^.*+$)')
+1760/55: possibleNameTitleRegex=re.compile(r'(^.*+$)')
+1760/56:
+possibleNameTitleRegex=re.compile(r'(^+
+.*+$)')
+1760/57: possibleNameTitleRegex=re.compile(r'(^.*+$)')
+1760/58: possibleNameTitleRegex=re.compile(r'(^\w+\s+\w$)')
+1760/59: possibleNameTitleRegex.search('James Harder')
+1760/60: possibleNameTitleRegex.search('James Harder')
+1760/61: mo=possibleNameTitleRegex.search('James Harder')
+1760/62: mo.group()
+1760/63: possibleNameTitleRegex.search('James Harder')
+1760/64: possibleNameTitleRegex=re.compile(r'(^\w+\s+\w$)')
+1760/65: possibleNameTitleRegex.findall('James Harder')
+1760/66: possibleNameTitleRegex.search('James Harder')
+1760/67: possibleNameTitleRegex=re.compile(r'(^\w+\s+\w$)')
+1760/68: possibleNameTitleRegex.findall('James Harder')
+1760/69: possibleNameTitleRegex=re.compile(r'(.*)')
+1760/70: possibleNameTitleRegex.findall('James Harder')
+1760/71: possibleNameTitleRegex=re.compile(r'(^.*)')
+1760/72: possibleNameTitleRegex.findall('James Harder')
+1760/73: mo.group()
+1760/74: possibleNameTitleRegex=re.compile(r'(^.*+$)')
+1760/75: possibleNameTitleRegex=re.compile(r'(^.*+$)')
+1760/76: possibleNameTitleRegex=re.compile(r'(\w+)(?:\s[^\s]+)?\s(\w+).*')
+1760/77: mo=possibleNameTitleRegex.search('James Harder')
+1760/78: mo.group()
+1760/79: mo=possibleNameTitleRegex.search('James A. Harder')
+1760/80: mo.group()
+1760/81: mo=possibleNameTitleRegex.search('James A. Harder is a big guy')
+1760/82: mo.group()
+1760/83: mo=possibleNameTitleRegex.search('is a big guy')
+1760/84: mo.group()
+1760/85: mo=possibleNameTitleRegex.search('Harder')
+1760/86: mo.group()
+1760/87: mo=possibleNameTitleRegex.search('Jake Harder')
+1760/88: mo.group()
+1760/89: import os
+1760/90: os.path.join('usr', 'bin', 'spam')
+1760/91: myFiles = ['accounts.txt', 'details.csv', 'invite.docx']
+1760/92:
+for filename in myFiles:
+        print(os.path.join('C:\\Users\\asweigart', filename))
+1760/93: os.getcwd()
+1760/94: os.chdir('C:\\Windows\\System32')
+1760/95: os.getcwd()
+1760/96: os.chdir('C:\\Users\\Ray\\documents\\projects\\python')
+1760/97: os.getcwd()
+1762/1: import os
+1762/2: os.getcwd()
+1762/3: os.path.exist('d:/')
+1762/4: os.path.exists('d:/')
+1762/5: helloFile=open('c:\\Users\\Ray\\Documents\\Projects\\Python\\hello.txt')
+1762/6: helloFile
+1762/7: helloFile.close
+1762/8: helloFile.close()
+1762/9: helloFile=open('c:\\Users\\Ray\\Documents\\Projects\\Python\\hello.txt')
+1762/10: helloFile.read()
+1762/11: helloContent=helloFile.read()
+1762/12: helloContent
+1762/13: helloFile.read()
+1762/14: helloFile.close()
+1762/15: cat helloFile.txt
+1762/16: helloFile=open('c:\\Users\\Ray\\Documents\\Projects\\Python\\hello.txt')
+1762/17: helloContent=helloFile.read()
+1762/18: helloContent
+1762/19: sonnetFile = open('sonnet29.txt')
+1762/20: sonnetFile.readlines()
+1762/21: baconFile = open('bacon.txt', 'w')
+1762/22: baconFile.write('Hello world!\n')
+1762/23: baconFile.close()
+1762/24: baconFile=open('bacon.txt','a')
+1762/25: baconFile.write('Bacon is not a vegetable')
+1762/26: baconFile.close()
+1762/27: baconFile=open('bacon.txt')
+1762/28: content=baconFile.read()
+1762/29: baconFile.close()
+1762/30: print(content)
+1762/31: import shelve
+1762/32: shelfFile=shelve.open('mydata')
+1762/33: cats=['Zophie', 'Pooka', 'Simon']
+1762/34: shelfFile['cats']=cats
+1762/35: shelfFile.close()
+1762/36: ls
+1762/37: shelfFile=shelve.open('mydata')
+1762/38: type(shelfFile)
+1762/39: shelfFile['cats']
+1762/40: shelfFile.close()
+1762/41: shelfFile=shelve.open('mydata')
+1762/42: list(shelfFile.keys())
+1762/43: list(shelfFile.values())
+1762/44: import pprint
+1762/45: pprint.pformat(cats)
+1762/46: cats = [{'name': 'Zophie', 'desc': 'chubby'}, {'name': 'Pooka', 'desc': 'fluffy'}]
+1762/47: pprint.pformat(cats)
+1762/48: fileObj=open('myCats.py','w')
+1762/49: fileObj.write('cats= '+ pprint.pformat(cats) + '\n')
+1762/50: fileObj.closed
+1762/51: fileObj.close()
+1762/52: import myCats
+1762/53: myCats.cats
+1762/54: myCats.cats[0]
+1762/55: myCats.cats[0]['name']
+1762/56: %history -g -f testhistory.txt
+1763/1: from selenium import webdriver
+1763/2: browser= webdriver.Firefox()
+1763/3: browser
+1763/4:
+browser = webdriver.Firefox()
+browser.get('https://mail.yahoo.com')
+1764/1: import os, pyperclip, re
+1764/2: os.getcwd()
+1764/3: os.chdir('c:/users/Ray/documents/projects/python')
+1764/4: text=str(pyperclip.paste())
+1764/5: text
+1764/6: text=str(pyperclip.paste())
+1764/7: text
+1764/8: text
+1764/9: simpleMatch=re.compile('Conversation')
+1764/10: simpleMatch.search(text)
+1764/11: simpleMatch=re.compile('Desktop')
+1764/12: simpleMatch.search(text)
+1764/13: mo=simpleMatch.search(text)
+1764/14: print('This is my find '+ mo.group())
+1764/15: simpleMatch=re.compile('Massachusetts')
+1764/16: mo=simpleMatch.search(text)
+1764/17: print('This is my find '+ mo.group())
+1764/18: simpleMatch=re.compile('Career Center')
+1764/19: mo=simpleMatch.search(text)
+1764/20: print('This is my find '+ mo.group())
+1764/21: simpleMatch=re.compile(r'\d\d\d.\d\d\d.\d\d\d\d')
+1764/22: mo=simpleMatch.search(text)
+1764/23: print('This is my find '+ mo.group())
+1764/24: text
+1764/25: simpleMatch=re.compile(r'F\s\d\d\d.\d\d\d.\d\d\d\d')
+1764/26: mo=simpleMatch.search(text)
+1764/27: print('This is my find '+ mo.group())
+1764/28: simpleMatch=re.compile(r'\r\n')
+1764/29: mo=simpleMatch.search(text)
+1764/30: print('This is my find '+ mo.group())
+1764/31: simpleMatch=re.compile(r'\r\nConversation opened')
+1764/32: mo=simpleMatch.search(text)
+1764/33: print('This is my find '+ mo.group())
+1764/34: simpleMatch=re.compile(r'\d\d\d.\d\d\d.\d\d\d\d')
+1764/35: simpleMatch.findall(text)
+1764/36: simpleMatch=re.compile(r'Career Center')
+1764/37: simpleMatch.findall(text)
+1764/38: text
+1764/39: simpleMatch=re.compile(r'\r\n\w+')
+1764/40: simpleMatch.findall(text)
+1764/41: simpleMatch=re.compile(r'\r\n\w+\s\w+')
+1764/42: simpleMatch.findall(text)
+1764/43: simpleMatch=re.compile(r'\r\n\w+\s\w+\s\w+')
+1764/44: simpleMatch.findall(text)
+1764/45: simpleMatch=re.compile(r'\r\n[A-Z]+\s[A-Z]+\s[A-Z]+')
+1764/46: simpleMatch.findall(text)
+1764/47: simpleMatch=re.compile(r'\r\n[A-Z]+\s[A-Z]+\s[A-Z]+.*')
+1764/48: simpleMatch.findall(text)
+1764/49: simpleMatch=re.compile(r'\r\n[A-Z]+\s[A-Z]+.*')
+1764/50: simpleMatch.findall(text)
+1764/51: titleRegex=simpleMatch.findall(text)
+1764/52: titleRegex
+1764/53: print(titleRegex)
+1764/54: print('This is a title: ' + titleRegex[0])
+1764/55: %history -g -f testhistory.txt
+1764/56: os.getcwd()
+1764/57: magics
+1764/58: magic
+1764/59: history?
+1764/60: os.getcwd()
+1764/61: %history -g -f testhistory11-29-18.txt
+1764/62: text
+1764/63: possibleNameTitleRegex=re.compile(r'\r\n[A-Z]+\s[A-Z]+.*')
+1764/64: possibleNameTitleRegex.findall('r\nRobert  DePetro, Recruiter\r\n')
+1764/65: possibleNameTitleRegex.findall('r\nJohn Doe, Recruiter\r\n')
+1764/66: possibleNameRegex=re.compile(r'\r\n[A-Z][a-z]+[\s|\s\s][A-Z][a-zA-Z]+.*')
+1764/67: possibleNameTitleRegex.findall('r\nJohn Doe, Recruiter\r\n')
+1764/68: possibleNameRegex.findall('r\nRobert  DePetro, Recruiter\r\n')
+1764/69: possibleNameRegex.findall('r\nJohn Doe, Recruiter\r\n')
+1764/70: possibleNameRegex=re.compile(r'\r\n[A-Z][a-z]+[\s[A-Z][a-zA-Z]+.*')
+1764/71: possibleNameRegex.findall('r\nJohn Doe, Recruiter\r\n')
+1764/72: possibleNameRegex=re.compile('John Doe')
+1764/73: possibleNameRegex.findall('John Doe')
+1764/74: possibleNameRegex.findall('\r\nJohn Doe')
+1764/75: possibleNameRegex=re.compile('.*')
+1764/76: possibleNameRegex.findall('\r\nJohn Doe')
+1764/77: possibleNameRegex.findall('\r\nJohn Doe')
+1764/78: possibleNameRegex=re.compile('[A-Z].*')
+1764/79: possibleNameRegex.findall('\r\nJohn Doe')
+1764/80:
+text=
+Conversation opened. 1 read message.
+
+Skip to content
+Using Gmail with screen readers
+
+5 of 33
+GLOBAL DESKTOP INFRASTRUCTURE ASSOCIATE ANALYST
+Inbox
+x
+
+DePetro, Robert T. <DePetroR@masshirecentralcc.com>
+Wed, Nov 28, 10:12 AM (14 hours ago)
+to
+
+ 
+
+MassHire Worcester Career Center has identified a new job opportunity with a company in Westboro, they are a filtration,
+
+separation and purification leader across a broad spectrum of life sciences.  They seek a Global Desktop Infrastructure Associate
+
+Analyst.  This individual will provide support for desktop operations, local site server systems, system administration, development,
+
+security.  Will provide user & administrative support for PCs and peripherals, technical guidance for management.  Strong compensation
+
+is appropriate for the education, experience and expected responsibility.
+
+ 
+
+Based on your experience listed in your Massachusetts Job Quest Profile, this seems like a possible match.  If you are interested and
+
+would like more information, please reply to this email, including an updated resume, and I will contact you within the next several
+
+days.  This is a time sensitive posting.
+
+ 
+
+ 
+
+Best Regards,
+
+Robert  DePetro, Recruiter
+
+ 
+
+ 
+
+ 
+
+
+
+Robert T. DePetro, CPRW, JCTC
+
+Recruiter
+
+340 Main Street
+
+Worcester, MA 01608
+
+T 508.373.7660
+
+F 508.799.8012
+
+ 
+
+depetror@masshirecentralcc.com
+
+MassHireCentralCC.com
+
+Please note our new name ? MassHire Worcester Career Center, formerly Workforce Central Career Centers, part of the Massachusetts One Stop Career Centers
+1764/81:
+text=
+Conversation opened. 1 read message.
+
+Skip to content
+Using Gmail with screen readers
+
+5 of 33
+GLOBAL DESKTOP INFRASTRUCTURE ASSOCIATE ANALYST
+Inbox
+x
+
+DePetro, Robert T. <DePetroR@masshirecentralcc.com>
+Wed, Nov 28, 10:12 AM (14 hours ago)
+to
+
+ 
+
+MassHire Worcester Career Center has identified a new job opportunity with a company in Westboro, they are a filtration,
+
+separation and purification leader across a broad spectrum of life sciences.  They seek a Global Desktop Infrastructure Associate
+
+Analyst.  This individual will provide support for desktop operations, local site server systems, system administration, development,
+
+security.  Will provide user & administrative support for PCs and peripherals, technical guidance for management.  Strong compensation
+
+is appropriate for the education, experience and expected responsibility.
+
+ 
+
+Based on your experience listed in your Massachusetts Job Quest Profile, this seems like a possible match.  If you are interested and
+
+would like more information, please reply to this email, including an updated resume, and I will contact you within the next several
+
+days.  This is a time sensitive posting.
+
+ 
+
+ 
+
+Best Regards,
+
+Robert  DePetro, Recruiter
+
+ 
+
+ 
+
+ 
+
+
+
+Robert T. DePetro, CPRW, JCTC
+
+Recruiter
+
+340 Main Street
+
+Worcester, MA 01608
+
+T 508.373.7660
+
+F 508.799.8012
+
+ 
+
+depetror@masshirecentralcc.com
+
+MassHireCentralCC.com
+
+Please note our new name ? MassHire Worcester Career Center, formerly Workforce Central Career Centers, part of the Massachusetts One Stop Career Centers
+1764/82:
+text = 
+Conversation opened. 1 read message.
+
+Skip to content
+Using Gmail with screen readers
+
+5 of 33
+GLOBAL DESKTOP INFRASTRUCTURE ASSOCIATE ANALYST
+Inbox
+x
+
+DePetro, Robert T. <DePetroR@masshirecentralcc.com>
+Wed, Nov 28, 10:12 AM (14 hours ago)
+to
+
+ 
+
+MassHire Worcester Career Center has identified a new job opportunity with a company in Westboro, they are a filtration,
+
+separation and purification leader across a broad spectrum of life sciences.  They seek a Global Desktop Infrastructure Associate
+
+Analyst.  This individual will provide support for desktop operations, local site server systems, system administration, development,
+
+security.  Will provide user & administrative support for PCs and peripherals, technical guidance for management.  Strong compensation
+
+is appropriate for the education, experience and expected responsibility.
+
+ 
+
+Based on your experience listed in your Massachusetts Job Quest Profile, this seems like a possible match.  If you are interested and
+
+would like more information, please reply to this email, including an updated resume, and I will contact you within the next several
+
+days.  This is a time sensitive posting.
+
+ 
+
+ 
+
+Best Regards,
+
+Robert  DePetro, Recruiter
+
+ 
+
+ 
+
+ 
+
+
+
+Robert T. DePetro, CPRW, JCTC
+
+Recruiter
+
+340 Main Street
+
+Worcester, MA 01608
+
+T 508.373.7660
+
+F 508.799.8012
+
+ 
+
+depetror@masshirecentralcc.com
+
+MassHireCentralCC.com
+
+Please note our new name ? MassHire Worcester Career Center, formerly Workforce Central Career Centers, part of the Massachusetts One Stop Career Centers
+1764/83:
+text = 
+Conversation opened. 1 read message.
+
+Skip to content
+Using Gmail with screen readers
+
+5 of 33
+GLOBAL DESKTOP INFRASTRUCTURE ASSOCIATE ANALYST
+Inbox
+x
+
+DePetro, Robert T. <DePetroR@masshirecentralcc.com>
+Wed, Nov 28, 10:12 AM (14 hours ago)
+to
+
+ 
+
+MassHire Worcester Career Center has identified a new job opportunity with a company in Westboro, they are a filtration,
+
+separation and purification leader across a broad spectrum of life sciences.  They seek a Global Desktop Infrastructure Associate
+
+Analyst.  This individual will provide support for desktop operations, local site server systems, system administration, development,
+
+security.  Will provide user & administrative support for PCs and peripherals, technical guidance for management.  Strong compensation
+
+is appropriate for the education, experience and expected responsibility.
+
+ 
+
+Based on your experience listed in your Massachusetts Job Quest Profile, this seems like a possible match.  If you are interested and
+
+would like more information, please reply to this email, including an updated resume, and I will contact you within the next several
+
+days.  This is a time sensitive posting.
+
+ 
+
+ 
+
+Best Regards,
+
+Robert  DePetro, Recruiter
+
+ 
+
+ 
+
+ 
+
+
+
+Robert T. DePetro, CPRW, JCTC
+
+Recruiter
+
+340 Main Street
+
+Worcester, MA 01608
+
+T 508.373.7660
+
+F 508.799.8012
+
+ 
+
+depetror@masshirecentralcc.com
+
+MassHireCentralCC.com
+
+Please note our new name ? MassHire Worcester Career Center, formerly Workforce Central Career Centers, part of the Massachusetts One Stop Career Centers
+1764/84: text=str(pyperclip.paste())
+1764/85: text
+1764/86:
+text=
+Conversation opened. 1 read message.
+
+Skip to content
+Using Gmail with screen readers
+
+5 of 33
+GLOBAL DESKTOP INFRASTRUCTURE ASSOCIATE ANALYST
+Inbox
+x
+
+DePetro, Robert T. <DePetroR@masshirecentralcc.com>
+Wed, Nov 28, 10:12 AM (14 hours ago)
+to
+
+ 
+
+MassHire Worcester Career Center has identified a new job opportunity with a company in Westboro, they are a filtration,
+
+separation and purification leader across a broad spectrum of life sciences.  They seek a Global Desktop Infrastructure Associate
+
+Analyst.  This individual will provide support for desktop operations, local site server systems, system administration, development,
+
+security.  Will provide user & administrative support for PCs and peripherals, technical guidance for management.  Strong compensation
+
+is appropriate for the education, experience and expected responsibility.
+
+ 
+
+Based on your experience listed in your Massachusetts Job Quest Profile, this seems like a possible match.  If you are interested and
+
+would like more information, please reply to this email, including an updated resume, and I will contact you within the next several
+
+days.  This is a time sensitive posting.
+
+ 
+
+ 
+
+Best Regards,
+
+Robert  DePetro, Recruiter
+
+ 
+
+ 
+
+ 
+
+
+
+Robert T. DePetro, CPRW, JCTC
+
+Recruiter
+
+340 Main Street
+
+Worcester, MA 01608
+
+T 508.373.7660
+
+F 508.799.8012
+
+ 
+
+depetror@masshirecentralcc.com
+
+MassHireCentralCC.com
+
+Please note our new name ? MassHire Worcester Career Center, formerly Workforce Central Career Centers, part of the Massachusetts One Stop Career Centers
+1764/87: nameRegex=re.compile(r'[A-Z].*')
+1764/88: nameRegex=re.findall(text)
+1764/89: text
+1764/90: nameRegex=re.compile(r'\r\n[A-Z].*')
+1764/91: nameRegex=re.findall(text)
+1764/92: nameRegex=re.findall(text)
+1764/93: nameRegex=re.findall(text)
+1764/94: nameRegex=re.findall(text)
+1764/95: nameRegex=re.compile(r'\r\n\w+')
+1764/96: nameRegex=re.findall(text)
+1764/97: text
+1764/98: nameRegex=re.findall(text)
+1764/99: nameRegex=re.compile(r'\r\n\s\w+')
+1764/100: nameRegex=re.findall(text)
+1764/101: nameRegex
+1764/102: nameRegex=re.findall(text)
+1764/103: nameRegex=re.findall(text)
+1764/104: nameRegex=re.compile(r'Career Center')
+1764/105: nameRegex=re.findall(text)
+1764/106: dir*os)
+1764/107: dir(os)
+1764/108: dir(re)
+1764/109: text
+1764/110: nameRegex=re.compile(r'\r\nConversation')
+1764/111: nameRegex.findall(text)
+1764/112: nameRegex=re.compile(r'\r\n\w+')
+1764/113: nameRegex.findall(text)
+1764/114: nameRegex=re.compile(r'\r\n\[A-Z]')
+1764/115: nameRegex.findall(text)
+1764/116: nameRegex=re.compile(r'\r\n\[A-Z],*')
+1764/117: nameRegex.findall(text)
+1764/118: nameRegex=re.compile(r'\r\n\[A-Z]\w.+')
+1764/119: nameRegex.findall(text)
+1764/120: nameRegex=re.compile(r'\r\n\w+\s\w+')
+1764/121: nameRegex.findall(text)
+1764/122: %history -g -f testhistory11-29-18A.txt
+1764/123: nameRegex=re.compile(r'\r\n\w+\s\w+\s\w+')
+1764/124: nameRegex.findall(text)
+1764/125: nameRegex=re.compile(r'\r\n\[A-Z]\w+\s\w+\s\w+')
+1764/126: nameRegex.findall(text)
+1764/127: nameRegex=re.compile(r'\r\n\w+\s\w+\s\w+')
+1764/128: nameRegex.findall(text)
+1764/129: nameRegex=re.compile(r'\r\n\[A-Z]\w+\s\w+\s\w+')
+1764/130: aname=nameRegex=re.compile(r'\r\n\[A-Z]\w+\s\w+\s\w+')
+1764/131: aname.findall('\r\nJames Harder')
+1764/132: aname=nameRegex=re.compile(r'\r\n\w+\s\w+\s\w+')
+1764/133: aname.findall('\r\nJames Harder')
+1764/134: aname.findall('James Harder')
+1764/135: aname=nameRegex=re.compile(r'\w+\s\w+')
+1764/136: aname.findall('James Harder')
+1764/137: aname=nameRegex=re.compile(r'[A-Z]\w+\s\w+')
+1764/138: aname.findall('James Harder')
+1764/139: aname=nameRegex=re.compile(r'[A-Z]\w+\s\[A-Z]w+')
+1764/140: aname.findall('James Harder')
+1764/141: aname=nameRegex=re.compile(r'[A-Z]\w+\s\[A-Z]w+')
+1764/142: aname.findall('James Harder')
+1764/143: aname=nameRegex=re.compile(r'[A-Z]\w+\s\w+')
+1764/144: aname.findall('James Harder')
+1764/145: aname=nameRegex=re.compile(r'[A-Z]\w+\s\[A-Z]\w+')
+1764/146: aname.findall('James Harder')
+1764/147: aname=nameRegex=re.compile(r'[A-Z]\w+\s[A-Z]\w+')
+1764/148: aname.findall('James Harder')
+1764/149: aname.findall('James  Harder')
+1764/150: aname=nameRegex=re.compile(r'[A-Z]\w+[\s|\s\s][A-Z]\w+')
+1764/151: aname.findall('James  Harder')
+1764/152: aname=nameRegex=re.compile(r'[A-Z]\w+\s[A-Z]\w+')
+1764/153: aname.findall('James Harder')
+1764/154: aname=nameRegex=re.compile(r'[A-Z]\w+\s+[A-Z]\w+')
+1764/155: aname.findall('James Harder')
+1764/156: aname.findall('James  Harder')
+1764/157: aname.findall('James   Harder')
+1764/158: %history -g -f testhistory11-30-18.txt
+1764/159: aname=nameRegex=re.compile(r'[A-Z][a-zA-Z]+\s+[A-Z]\w+')
+1764/160: aname.findall('James   Harder')
+1764/161: aname.findall('JaMes   Harder')
+1764/162: aname=nameRegex=re.compile(r'[A-Z][a-zA-Z]+\s+[A-Z][a-zA-Z]+')
+1764/163: aname.findall('JaMes   Harder')
+1764/164: aname.findall('JaMes   HarDer')
+1764/165: %history -g -f testhistory11-30-18.txt
+1764/166: os.getcwd()
+1764/167: aname.findall('Willie  SMythe')
+1764/168: aname.findall('willie  SMythe')
+1764/169: aname=nameRegex=re.compile(r'\r\n[A-Z][a-zA-Z]+\s+[A-Z][a-zA-Z]+')
+1764/170: aname.findall('\r\nJames Harder')
+1764/171: aname.findall('\r\nRobert   DePetro')
+1764/172: aname.findall('\r\nRobert   dePetro')
+1764/173: raise Exception('This is the error message.')
+1764/174:
+import traceback
+try:
+    raise Exception('This is the error message.')
+except:
+    errorFile = open('errorInfo.txt', 'w')
+    errorFile.write(traceback.format_exc())
+    errorFile.close()
+    print('The traceback info was written to errorInfo.txt.')
+1764/175: podBayDoorStatus = 'open'
+1764/176: assert podBayDoorStatus == 'open', 'The pod bay doors need to be "open".'
+1764/177: podBayDoorStatus = 'I\'m sorry, Dave. I\'m afraid I can\'t do that.'
+1764/178: assert podBayDoorStatus == 'open', 'The pod bay doors need to be "open".'
+1765/1: first=input()
+1765/2: first
+1765/3: first > 1
+1765/4: assert TypeError
+1765/5: first==int(first)
+1765/6: assert first==int(first), first + ' Needs conversion to integer'
+1765/7: import logging
+1766/1: import webbrowser
+1766/2: webbrowser.open('http://inventwithpython.com/')
+1766/3: webbrowser.open('http://inventwithpython.com/')
+1766/4: webbrowser.Mozilla.open('http://inventwithpython.com/')
+1766/5: webbrowser.Mozilla.open('http://inventwithpython.com/')
+1766/6: webbrowser._tryorder
+1766/7: path
+1766/8: !path
+1766/9: set BROWSER
+1766/10: !set BROWSER
+1766/11: webbrowser._tryorder
+1766/12: webbrowser.get('firefox').open('http://www.google.com')
+1766/13: webbrowser.get().open('http://www.google.com')
+1766/14: webbrowser.get().open('http://www.google.com')
+1766/15: webbrowser.get().open('http://uionline.com')
+1766/16: webbrowser.get().open('https://www.mass.gov/unemployment-insurance-ui-online')
+1766/17: import subprocess
+1766/18: subprocess.call(["emacsc"])
+1766/19: subprocess.call(["emacsc.bat"])
+1766/20: subprocess.call(["start","emacsc.bat"])
+1767/1: import requests
+1767/2: res = requests.get('https://automatetheboringstuff.com/files/rj.txt')
+1767/3: type(res)
+1767/4: res.status_code==requests.codes.ok
+1767/5: len(res.text)
+1767/6: print(res.text[:250])
+1767/7: res = requests.get('http://inventwithpython.com/page_that_does_not_exist')
+1767/8: res.raise_for_status()
+1767/9: res = requests.get('https://automatetheboringstuff.com/files/rj.txt')
+1767/10: res.raise_for_status()
+1767/11: import os
+1767/12: os.getcwd()
+1767/13: playFile = open('RomeoAndJuliet.txt', 'wb')
+1767/14:
+for chunk in res.iter_content(100000):
+        playFile.write(chunk)
+1767/15: playFile.close()
+1767/16: %history -g -f testhistory12-03-18.txt
+1768/1: import requests
+1768/2: import bs4
+1768/3: import bs4
+1768/4: res = requests.get('http://nostarch.com')
+1768/5: res.raise_for_status()
+1768/6: noStarchSoup=bs4.BeautifulSoup(res.text)
+1768/7: type(noStarchSoup)
+1768/8: exampleFile=open('example.html')
+1768/9: exampleSoup=bs4.BeautifulSoup(exampleFile)
+1768/10: type(exampleSoup)
+1768/11: elems=exampleSoup.select('#author')
+1768/12: type(elems)
+1768/13: len(elems)
+1768/14: type(elems[0])
+1768/15: elems[0].getText()
+1768/16: str(elems[0])
+1768/17: elems[0].attrs
+1768/18: pElems = exampleSoup.select('p')
+1768/19: str(pElems[0])
+1768/20: pElems[0].getText()
+1768/21: str(pElems[1])
+1768/22: pElems[1].getText()
+1768/23: str(pElems[2])
+1768/24: pElems[2].getText()
+1768/25: %history -g -f testhistory.txt
+1769/1: from lxml import etree
+1770/1: import lxml
+1770/2: root=etree.Element("root")
+1770/3: from lxml import etree
+1770/4: root=etree.Element("root")
+1770/5: root
+1770/6: dir(lxml)
+1770/7: dir(etree)
+1770/8: root=etree.Element("root")
+1770/9: root.tag
+1770/10: print(root.tag)
+1770/11: root.append(etree.Element("child1"))
+1770/12: child2=etree.SubElement(round, "child2")
+1770/13: child2=etree.SubElement(root, "child2")
+1770/14: child3=etree.SubElement(root, "child3")
+1770/15: print(etree.tostring(root. pretty_print=True))
+1770/16: print(etree.tostring(root. pretty_print=True))
+1770/17: etree.tostring(root. pretty_print=True)
+1770/18: etree
+1770/19: etree.tostring()
+1770/20: etree.tostring(root)
+1770/21: etree.tostring(root, pretty_print=True)
+1770/22: print(etree.tostring(root pretty_print=True))
+1770/23: print(etree.tostring(root, pretty_print=True))
+1770/24: child = root[0]
+1770/25: print(child.tag)
+1770/26: root
+1770/27: print(len(root))
+1770/28: child
+1770/29: root.index(root[1])
+1770/30: children=list(root)
+1770/31:
+for child in root:
+    print(child.tag)
+1770/32: list
+1770/33: children
+1770/34: child1
+1770/35: root
+1770/36: jobsearch=etree.Element("root")
+1770/37: jobsearch
+1770/38: jobsearch.tag
+1770/39: jobsearch.append(etree.Element("resume"))
+1770/40: child2=etree.SubElement(root, "Cover_Letter")
+1770/41: Cover_Letter=etree.SubElement(root, "Cover_Letter")
+1770/42: Cover_Letter=etree.SubElement(jobsearch, "Cover_Letter")
+1770/43: jobsearch
+1770/44: etree.tostring(jobsearch)
+1770/45: print(etree.tostring(jobsearch))
+1770/46: jobsearch=etree.Element("jobsearch")
+1770/47: jobsearch
+1770/48: jobsearch.tag
+1770/49: etree.tostring(jobsearch)
+1770/50: Cover_Letter=etree.SubElement(jobsearch, "Cover_Letter")
+1770/51: jobsearch.append(etree.Element("resume"))
+1770/52: etree.tostring(jobsearch)
+1770/53: print(etree.tostring(jobsearch))
+1770/54: import os
+1770/55: os.getcwd()
+1770/56: %history -g -f testhistory12-12-18.txt
+1770/57:
+some_XML_data="<header type="primary tech">
+** Summary:<subheader type="summary">
+  <item> Creative, and experienced professional bringing superior design and debugging capabilities, innovative problem solving skills and dedication to quality</item></subheader>
+*** Skills: Languages and Software Technology<subheader type="skills" level="3">
+**** Languages: in general order of familiarity: <subheader type="languages" level="4"> 
+  <items> &#8226;SQL Server, SQLite, MS Access (VBA), VB, VBScript, Ruby, Javascript,  Python, .NET, HTML5, CSS3, XML, PHP, MySQL, Unix/Linux, Cygwin, Power Shell </items></subheader>
+**** Software: <subheader type="software" level="4">
+  <items>&#8226; Expertise in Salesforce, Sharepoint, Spiceworks, Git,  SQL Server Management Studio, Virtualization, Crystal Reports, Microsoft Office (Including MS Access), OpenOffice (extending in Basic and Python) Windows, Linux/Posix, Visual Studio, Eclipse, Emacs, Vim, Wordpress and Joomla</items></subheader></subheader>
+*** <subheader id="ALLACCOMPLISHMENTS" type="accomplishments" level="3">Accomplishments</subheader>
+**** <subheader id="DESCPAGEFLEX" type="description" >Product Technical Support for a Global Company that develops Marketing Automation/Variable Data Printing/Flexible web-to-print platforms</subheader>
+**** Itemized Functions: <subheader type="pageflex functions">
+  <item id="pageflex1">Interface with product engineering to develop new features and bug fixes based on customer needs</item>
+  <item id="pageflex2">Resolve, debug and document customer issues as related to the Pageflex technology stack (see below)</item>
+  <item id="pageflex3">Developed Custom Storefront Deployment (automation) (Using Pageflex to document and control Pageflex)</item>
+  <item id="pageflex4">Re-build and emulate customer platforms using virtualization to resolve customer issues</item>
+  <item id="pageflex5">Resolve SMTP, network and firewall issues as related to Pageflex operations</item></subheader>
+**** Itemized Technology Stack: <subheader type="pageflex technology stack">
+  <item id="pageflex6">Windows Server 2008 R2, Windows Server 2012 R2, Windows IIS Web Server, Pageflex Server</item>
+  <item id="pageflex7">SQL Server (backups, restores, queries) SQL Server 2005, 2008, 2012 and 2014 (clustered)</item>
+  <!--<item id="pageflex8">SQL Server SSIS/DTS</item>-->
+  <item id="pageflex9">VMWare ESXi (vCenter Server and vSphere Client)</item>
+  <item id="pageflex10">Graphics and Font technology, Adobe Indesign on MAC as related to Pageflex Support</item>
+  <item id="pageflex11">Javascript, Vbscript and XML command packet API</item>
+  <item id="pageflex12">Pageflex Studio, Pageflex Storefront, ASP.Net platform, Salesforce, Lotus Notes, Slack, Sharepoint</item></subheader>
+**** Currently in Progress (On-going) <subheader type="RGN1">
+  <items id="RGN1">Multiple Projects for RGNterprises, TSSG, Automated Income Master Mind and Flat Penny Bar and Grill involving multiple technologies in full stack web development, Big Data Analytics, Software QA Automation, DevOps, Networking and Internet Marketing. Please see https://linkedin/in/raynieva for more detailed information</items> </subheader>
+**** <subheader id="DESCDA" type="description" >Working for the largest Foodservice GPO in the nation</subheader>
+  <items id="DA1">&#8226; Development of (SQL) SQLite /Ditto automated data entry system using Ruby / VB / MS Access. for interfacing with cloud platform technologies &#8226; Facilitated introduction of Sidekick/Hubspot(TM) (email sales/marketing superpower tracking) &#8226; Improved storage performance significantly for massive Teamdrive(TM) filesystem (250,000 document files) by moving to a no-sync strategy. &#8226; Facilitated email migrations for 3 sister companies &#8226; Design, development and administration of 3 different VOIP systems using VonageBusiness(TM) for each separate company brand. &#8226; In capacity of Information Engineer, Salesforce(TM) development of 8000+ to date ticketing system and integration to Spiceworks Technology &#8226; Also lead development of Product/Asset inventory system using same technologies.&#8226; Design and development of Intranet Web site using Wordpress and Salesforce/Sharepoint Integration. </items>
+**** Itemized <subheader id="DAITEMIZED">
+  <item id="DA1"> Development of (SQL) SQLite /Ditto automated data entry system using Ruby / VB / MS Access for interfacing with cloud platform technologies</item>
+  <item id="DA2"> Facilitated introduction of Sidekick/Hubspot(TM) (email sales/marketing superpower tracking)</item>
+  <item id="DA3"> Improved storage performance significantly for massive Teamdrive(TM) filesystem (250,000 document files) by moving to a no-sync strategy</item>
+  <item id="DA4"> Facilitated email migrations for 3 sister companies</item>
+  <item id="DA5"> Design, development and administration of 3 different VOIP systems using VonageBusiness(TM) for each separate company brand</item>
+  <item id="DA6"> In capacity of Information Engineer, Salesforce(TM) development of 8000+ to date ticketing system and integration to Spiceworks Technology</item>
+  <item id="DA7"> Also lead development of Product/Asset inventory system using same technology (Salesforce)</item>
+  <item id="DA8"> Design and development of Intranet Web site using Wordpress and Salesforce/Sharepoint Integration.</item>
+</subheader>
+**** <subheader id="DESCGHMNE">At the largest community based newspaper company in NE (parent company is largest in nation)</subheader>
+**** Itemized <subheader id="GHMNEITEMIZED">
+<items id="GHMNE1">&#8226;Working for business applications group support/developed a variety of time saving automated production and system adminstration/automation solutions using multiple programming languages (web and client/server desktop) technologies. &#8226; Involved in conversion of advertising systems/products from Enterprise News Media (35 papers) acquisitions to Miles advertising system. &#8226; Monitoring and system maintenance of mission critical business systems for advertising, sales, finance and production. &#8226; Design and development of Joomla/MediaWiki based intranet website for IT documentation and communication. Design, development of automated Insert Tracking System for print and deliver operations. Design/development Helpdesk Database.</items>
+<item id="GHMNE2">Working for business applications group support/developed a variety of time saving automated production and system adminstration/automation solutions using multiple programming languages (web and client/server desktop) technologies</item>
+<item id="GHMNE3">Involved in conversion of advertising systems/products from Enterprise News Media (35 papers) acquisitions to Miles advertising system</item>
+<item id="GHMNE4">Monitoring and system maintenance of mission critical business systems for advertising, sales, finance and production</item> 
+<item id="GHMNE5">Design and development of Joomla/MediaWiki based intranet website for IT documentation and communication. Design, development of automated Insert Tracking System for print and deliver operations. Design/development Helpdesk Database</item>
+<item id="GHMNE6"></item></subheader>
+  </header>
+
+* Header DevOps Tech Oriented Summary
+<header type="Devops_Tech">
+** <subheader type="summary">Summary
+  <item>DevOps System Admininstrator bringing superior design, deployment, debugging capabilities, innovative problem solving skills and dedication to quality</item></subheader>
+*** <subheader type="skills" level="3">Skills:
+**** <subheader type="languages" level="4"> Languages: in general order of familiarity:
+  <items>&#8226; SQL Server, MS Access (VBA), VB, VBScript, Ruby, Javascript, Perl, Python, C/C++, C#, .NET, HTML, CSS, XML, PHP, MySQL, Unix/Linux, Cygwin, Power Shell, ASP, Lisp, Java</items></subheader>
+**** <subheader type="software" level="4">Software:
+  <items>&#8226; Expertise in Windows, Linux, Chef, Puppet, Remote Powershell, Chocolatey, Git, SQL Server Management Studio, SSIS, DTS, Virtualization, Visual Studio, Eclipse, Emacs, Vim, Wordpress and Joomla</items></subheader></subheader>
+*** <subheader id="ALLACCOMPLISHMENTS" type="accomplishments" level="3">Accomplishments</subheader>
+****<subheader id="DESCPAGEFLEX" type="description" >Product Technical Support for a Global Company that develops Marketing Automation/Variable Data Printing/Flexible web-to-print platforms</subheader>
+**** Itemized<subheader type="pageflex functions">Functions:
+  <item id="pageflex1">Interface with product engineering to develop new features and bug fixes based on customer needs</item>
+  <item id="pageflex2">Resolve, debug and document customer issues as related to the Pageflex technology stack (see below)</item>
+  <item id="pageflex3">Developed Custom Storefront Deployment (automation) (Using Pageflex to document and control Pageflex)</item>
+  <item id="pageflex4">Re-build and emulate customer platforms using virtualization to resolve customer issues</item>
+  <item id="pageflex5">Resolve SMTP, network and firewall issues as related to Pageflex operations</item></subheader>
+**** Itemized<subheader type="pageflex technology stack">Technology Stack:
+  <item id="pageflex6">Windows Server 2008 R2, Windows Server 2012 R2, Windows IIS Web Server, Pageflex Server</item>
+  <item id="pageflex7">SQL Server (backups, restores, queries) SQL Server 2005, 2008, 2012 and 2014 (clustered)</item>
+  <item id="pageflex8">SQL Server SSIS/DTS</item>
+  <item id="pageflex9">VMWare ESXi (vCenter Server and vSphere Client)</item>
+  <item id="pageflex10">Graphics and Font technology, Adobe Indesign on MAC as related to Pageflex Support</item>
+  <item id="pageflex11">Javascript, Vbscript and XML command packet API</item>
+  <item id="pageflex12">Pageflex Studio, Pageflex Storefront, ASP.Net platform, Salesforce, Lotus Notes, Slack, Sharepoint</item></subheader>
+**** <subheader type="RGN1">Currently in Progress (On-going)
+  <items id="RGN1">Multiple Projects for RGNterprises, TSSG, Automated Income Master Mind and Flat Penny Bar and Grill involving multiple technologies in full stack web development, Big Data Analytics, Software QA Automation, DevOps, Networking and Internet Marketing. Please see https://linkedin/in/raynieva for more detailed information</items> </subheader>
+**** <subheader id="DESCDA" type="description" >Working for the largest Foodservice GPO in the nation</subheader>
+
+ <items id="DA1">&#8226; Development of (SQL) SQLite /Ditto automated data entry system using Ruby / VB / MS Access. for interfacing with cloud platform technologies &#8226; Facilitated introduction of Sidekick/Hubspot(TM) (email sales/marketing superpower tracking) &#8226; Improved storage performance significantly for massive Teamdrive(TM) filesystem (250,000 document files) by moving to a no-sync strategy. &#8226; Facilitated email migrations for 3 sister companies &#8226; Design, development and administration of 3 different VOIP systems using VonageBusiness(TM) for each separate company brand. &#8226; In capacity of Information Engineer, Salesforce(TM) development of 8000+ to date ticketing system and integration to Spiceworks Technology &#8226; Also lead development of Product/Asset inventory system using same technologies.&#8226; Design and development of Intranet Web site using Wordpress and Salesforce/Sharepoint Integration. </items>
+
+**** Itemized <subheader id="DAITEMIZED">
+<item id="DA1"> Development of (SQL) SQLite /Ditto automated data entry system using Ruby / VB / MS Access for interfacing with cloud platform technologies</item>
+<item id="DA2"> Facilitated introduction of Sidekick/Hubspot(TM) (email sales/marketing superpower tracking)</item>
+<item id="DA3"> Improved storage performance significantly for massive Teamdrive(TM) filesystem (250,000 document files) by moving to a no-sync strategy</item>
+<item id="DA4"> Facilitated email migrations for 3 sister companies</item>
+<item id="DA5"> Design, development and administration of 3 different VOIP systems using VonageBusiness(TM) for each separate company brand</item>
+<item id="DA6"> In capacity of Information Engineer, Salesforce(TM) development of 8000+ to date ticketing system and integration to Spiceworks Technology</item>
+<item id="DA7"> Also lead development of Product/Asset inventory system using same technology (Salesforce)</item>
+<item id="DA8"> Design and development of Intranet Web site using Wordpress and Salesforce/Sharepoint Integration.</item></subheader>
+**** <subheader id="DESCGHMNE">At the largest community based newspaper company in NE (parent company is largest in nation)</subheader>
+**** Itemized
+<items id="GHMNE1">&#8226;Working for business applications group support/developed a variety of time saving automated production and system adminstration/automation solutions using multiple programming languages (web and client/server desktop) technologies. &#8226; Involved in conversion of advertising systems/products from Enterprise News Media (35 papers) acquisitions to Miles advertising system. &#8226; Monitoring and system maintenance of mission critical business systems for advertising, sales, finance and production. &#8226; Design and development of Joomla/MediaWiki based intranet website for IT documentation and communication. Design, development of automated Insert Tracking System for print and deliver operations. Design/development Helpdesk Database.</items>
+<item id="GHMNE2">Working for business applications group support/developed a variety of time saving automated production and system adminstration/automation solutions using multiple programming languages (web and client/server desktop) technologies</item>
+<item id="GHMNE3">Instrumental in conversion of advertising systems/products from Enterprise News Media (35 papers) acquisitions to Miles advertising system</item>
+<item id="GHMNE4">Monitoring and system maintenance of mission critical business systems for advertising, sales, finance and production</item> 
+<item id="GHMNE5">Design and development of Joomla/MediaWiki based intranet website for IT documentation and communication. Design, development of automated Insert Tracking System for print and deliver operations. Design/development Helpdesk Database</item>
+<item id="GHMNE6"></item>
+  </header>
+"
+   1: from lxml import etree
+   2: some_XML_data="<subheader>Master Resume Summary:</subheader>"
+   3: subheader=etree.fromstring(some_XML_data)
+   4: print (subheader.tag)
+   5: etree.tostring(subheader)
+   6: some_XML_data="** <subheader>Master Resume Summary:</subheader>"
+   7: subheader=etree.fromstring(some_XML_data)
+   8: some_XML_data='<subheader id="ALLACCOMPLISHMENTS" type="accomplishments" level="3">Accomplishments</subheader>'
+   9: subheader=etree.fromstring(some_XML_data)
+  10: print(subheader.tag)
+  11: etree.tostring(subheader)
+  12: subheader1=etree.fromstring(some_XML_data)
+  13: print(subheader.tag)
+  14: print(subheader1.tag)
+  15: listOfSubheaders=[]
+  16: listOfSubheaders[0]=etree.fromstring(some_XML_data)
+  17: listOfSubheaders
+  18: listOfSubheaders[0]=subheader1
+  19: listOfSubheaders=[subheader1,]
+  20: listOfSubheaders[0]
+  21: print(listOfSubheaders[0])
+  22: listOfSubheaders[0].tag
+  23: listOfSubheaders[0].text
+  24: %history -g -f testhistory12-12-18.txt

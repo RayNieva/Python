@@ -1,0 +1,644 @@
+ 1/1: 2+2
+ 1/2: 2
+ 1/3: 2**3
+ 1/4: 22%8
+ 1/5: 22//8
+ 1/6: 22/8
+ 1/7: 5-2
+ 1/8: 2 + 3 * 6
+ 1/9: (2 + 3) * 6
+1/10: 48565878 * 578453
+1/11: 2 ** 8
+1/12:  23 / 7
+1/13:  23 // 7
+1/14: 2     +            2
+1/15: (5 - 1) * ((7 + 1) / (3 - 1))
+1/16: 5 +
+1/17: 42 + 5 + * 2
+1/18:  'Hello world! 'Hello world!
+1/19: 'Alice' + 'Bob'
+1/20: 'Alice' + 42
+1/21: 'Alice' * 5
+1/22: 'Alice '
+1/23: 'Alice '*6
+1/24: 'element, '*5
+1/25: spam = 40
+1/26: spam
+1/27: eggs = 2
+1/28: spam+eggs
+1/29: !emacs
+1/30: cd
+1/31: cd ..
+1/32: cd ..
+1/33: pwd
+1/34: cd documents
+1/35: cd projects\python
+1/36: ls
+1/37: !python hello.py
+1/38: !python hello.py
+1/39: !python hello.py
+1/40: !python hello.py
+1/41: len('hello')
+1/42: len('My very energetic monster just scarfed nachos.')
+1/43: len('')
+1/44: print('I am ' + 29 + ' years old.')
+1/45: print('I am ' + str(29) + ' years old.')
+1/46: str(0)
+1/47: str(-3.14)
+1/48: int('42')
+1/49: int('-99')
+1/50: int(1.25)
+1/51: int(1.99)
+1/52: float('3.14')
+1/53: float(10)
+1/54: spam = input()
+1/55: spam
+1/56: int(spam)
+1/57: spam+1
+1/58: spam2=int(spam)
+1/59: spam2+1
+1/60: spam2 * 10 / 5
+1/61: int('99.99')
+1/62: float('99.99')
+1/63: int( 99.99)
+1/64:
+print('What is your age?') # ask for their age
+   myAge = input()
+   print('You will be ' + str(int(myAge) + 1) + ' in a year.')
+1/65:
+print('What is your age?') # ask for their age
+myAge = input()
+
+print('You will be ' + str(int(myAge) + 1) + ' in a year.')
+1/66: 42 == '42'
+1/67: 42 == 42.0
+ 2/1:
+tableData = [['apples', 'oranges', 'cherries', 'banana'],
+             ['Alice', 'Bob', 'Carol', 'David'],
+             ['dogs', 'cats', 'moose', 'goose']]
+ 2/2: tableDate
+ 2/3: tableData
+ 2/4: firstColumn=tableData[0]
+ 2/5: firstColumn
+ 2/6: len(thirdColumn[0])
+ 2/7: thirdColumn=tableData[2]
+ 2/8: thirdColumn=tableData[2]
+ 2/9: len(thirdColumn[0])
+2/10: columnWidths=len(thirdColumn[0])
+2/11: columnWidths
+2/12: numOfColumnWidths==len(thirdColumn[0])
+2/13: numOfColumnWidths=len(thirdColumn[0])
+2/14: numOfColumnWidths
+2/15:
+for i in range(numOfcolumnWidths):
+    print(len(firstColumn[i]))
+2/16: numOfColumnWidths=len(thirdColumn[0])
+2/17:
+for i in range(numOfColumnWidths):
+    print(len(firstColumn[i]))
+2/18: columnWidths=[]
+2/19: n=1
+2/20: columnWidths.append(n)
+2/21: columnWidths
+2/22: del columnWidths[0]
+2/23: columnWidths
+2/24:
+for i in range(numOfColumnWidths):
+    print(len(firstColumn[i]))
+    n=len(firstColumn[i]))
+    columnWidths.append(n)
+2/25:
+for i in range(numOfColumnWidths):
+    print(len(firstColumn[i]))
+    n=len(firstColumn[i])
+    columnWidths.append(n)
+2/26: columnWidths
+2/27: print(colWidths)
+2/28: print(columWidths)
+2/29: print(columnWidths)
+2/30: columnWidths.sort(reverse=True)
+2/31: columnWidths
+2/32: columnWidths[0]
+2/33: 'A String'.rjust(columnWidths[0])
+2/34: print('A String'.rjust(columnWidths[0]))
+2/35: columnWidths
+2/36: columnWidths[0]
+2/37: 'A String'.rjust(8)
+2/38: 'A String'.rjust(8)
+2/39: 'Hello'.rjust(10)
+2/40: 'A String'.rjust(8)
+2/41: 'Hello World'.rjust(20)
+2/42: 'A String'.rjust(20)
+2/43: 'A String'.rjust(9)
+2/44: 'A String'.rjust(columnWidths[0] + 2)
+ 3/1: hist
+ 3/2:
+tableData = [['apples', 'oranges', 'cherries', 'banana'],
+             ['Alice', 'Bob', 'Carol', 'David'],
+             ['dogs', 'cats', 'moose', 'goose']]
+ 3/3: tableData
+ 3/4: firstColumn=tableData[0]
+ 3/5: secondColumn=tableData[1]
+ 3/6: thirdColumn=tableData[2]
+ 3/7: print(firstColumn[0])
+ 3/8: print(secondColumn[0])
+ 3/9: print(thirdColumn[0])
+3/10: print(firstColumn[0],secondColumn[0],thirdColumn[0])
+3/11: %history -g -f testhistory.txt
+3/12: numOfcolumnWidths=len(thirdColumn[0])
+3/13: numOfcolumnWidths
+3/14:
+for i in range(numOfColumnWidths):
+    print(firstColumn[i],secondColumn[i],thirdColumn[i])
+3/15:
+for i in range(numOfColumnWidths):
+    print(firstColumn[i],secondColumn[i],thirdColumn[i])
+3/16: numOfcolumnWidths
+3/17: numOfColumnWidths
+3/18: numOfcolumnWidths
+3/19:
+for i in range(numOfcolumnWidths):
+    print(firstColumn[i],secondColumn[i],thirdColumn[i])
+ 4/1:
+tableData = [['apples', 'oranges', 'cherries', 'banana'],
+             ['Alice', 'Bob', 'Carol', 'David'],
+             ['dogs', 'cats', 'moose', 'goose']]
+ 4/2: tableData
+ 4/3: firstColumn=tableData[0]
+ 4/4: firstColumn
+ 4/5: secondColumn=tableData[1]
+ 4/6: secondColumn
+ 4/7: thirdColumn=tableData[2]
+ 4/8: thirdColumn
+ 4/9: len(firstColumn)
+4/10: numOfColumnWidth=len(firstColumn)
+4/11: numOfColumnWidth
+4/12: numOfColumnWidths=len(firstColumn)
+4/13: numOfColumnWidths
+4/14:
+for i in range(numOfColumnWidths):
+    print(len(firstColumn[i]))
+    n=len(firstColumn[i])
+    columnWidths.append(n)
+4/15: columnWidths
+4/16: columnWidths=[]
+4/17:
+for i in range(numOfColumnWidths):
+    print(len(firstColumn[i]))
+    n=len(firstColumn[i])
+    columnWidths.append(n)
+4/18: print(columnWidths)
+4/19: columnWidths.sort(reverse=True)
+4/20: columnWidths[0]
+4/21:
+for i in range(numOfColumnWidths):
+    print(firstColumn[i],secondColumn[i],thirdColumn[i])
+4/22: %history -g -f testhistory.txt
+4/23:
+for i in range(numOfColumnWidths):
+       print(firstColumn[i].rjust(columnWidths[0] + 2),secondColumn[i],thirdColumn[i])
+4/24: %history -g -f testhistory.txt
+4/25: import printTable
+ 5/1: import printTable
+ 5/2: len(firstColumn[0])
+ 5/3: tableData
+ 5/4:
+tableData = [['apples', 'oranges', 'cherries', 'banana'],
+             ['Alice', 'Bob', 'Carol', 'David'],
+             ['dogs', 'cats', 'moose', 'goose']]
+ 5/5: tableData
+ 5/6:
+tableData
+firstColumn=tableData[0]
+firstColumn
+secondColumn=tableData[1]
+secondColumn
+thirdColumn=tableData[2]
+thirdColumn
+thirdColumn[0]
+ 5/7: tableData
+ 5/8: secondColumn
+ 5/9: numOfColumnWidths=len(firstColumn[0])
+5/10: numOfColumnWidths
+5/11: numOfColumnWidths
+5/12: firstColumn
+5/13: len(firstColumn)
+5/14: len(firstColumn[0])
+5/15: numOfColumnWidths=len(firstColumn)
+5/16: numOfColumnWidths
+ 6/1: import printTable
+ 6/2: columnWidths
+ 6/3: tableData
+ 6/4: printTable.tableData
+ 6/5: printTable.i
+ 6/6: tableData=printTable.tableData
+ 6/7: tableData
+ 6/8: printTable.n
+ 6/9:
+tableData
+firstColumn=tableData[0]
+firstColumn
+secondColumn=tableData[1]
+secondColumn
+thirdColumn=tableData[2]
+thirdColumn
+6/10: firstColumn
+6/11:
+numOfColumnWidths1=len(firstColumn)
+numOfColumnWidths2=len(secondColumn)
+numOfColumnWidths3=len(thirdColumn)
+6/12: numOfColumnWidths1
+6/13: numOfColumnWidths2
+6/14: numOfColumnWidths3
+6/15:
+columnWidths1=[]
+columnWidths2=[]
+columnWidths3=[]
+6/16: columnWidths1
+6/17: columnWidths3
+6/18: %history -g -f testhistory.txt
+ 7/1: import printTable
+ 8/1: import printTable
+ 9/1: import printTable
+10/1: import printTable
+10/2: importlib.reload(printTable)
+10/3: imp.reload(printTable)
+10/4: import imp.reload(printTable)
+10/5: import importlib.reload(printTable)
+10/6: reload(printTable)
+10/7: import imp
+10/8: imp.reload(printTable)
+10/9: imp.reload(printTable)
+11/1: import printTable
+11/2: printTable.main()
+11/3: %history -g -f testhistory.txt
+11/4: import re
+11/5: phoneNumRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
+11/6: mo = phoneNumRegex.search('My number is 415-555-4242.')
+11/7: mo
+11/8: print('Phone number found: ' + mo.group())
+12/1: import os
+12/2: os.makedirs('C:\\delicious\\walnut\\waffles')
+12/3: os.path.abspath()
+12/4: os.path.abspath(c:\)
+12/5: os.path.abspath(.)
+12/6: os.path.abspath('.')
+12/7: os.path.abspath('.')
+12/8: os.chdir('c:/users/ray/documents/projects/Python/')
+12/9: os.getcwd()
+12/10: os.path.abspath('.')
+12/11: os.path.isabs('.')
+12/12: os.path.isabs(os.path.abspath('.'))
+12/13: os.path.relpath('C:\\Windows', 'C:\\')
+12/14: os.path.relpath('C:\\Windows', 'C:\\spam\\eggs')os.path.relpath('C:\\Windows', 'C:\\spam\\eggs')
+12/15: ath = 'C:\\Windows\\System32\\calc.exe'
+12/16: os.path.basename(ath)
+12/17: os.path.dirname(ath)
+12/18: calcFilePath = 'C:\\Windows\\System32\\calc.exe'
+12/19: os.path.split(calcFilePath)
+12/20: (os.path.dirname(calcFilePath), os.path.basename(calcFilePath))
+12/21: calcFilePath.split(os.path.sep)
+12/22: %history -g -f testhistory.txt
+12/23: os.getcwd()
+13/1:
+capitals = {'Alabama': 'Montgomery', 'Alaska': 'Juneau', 'Arizona': 'Phoenix',
+   'Arkansas': 'Little Rock', 'California': 'Sacramento', 'Colorado': 'Denver',
+   'Connecticut': 'Hartford', 'Delaware': 'Dover', 'Florida': 'Tallahassee',
+   'Georgia': 'Atlanta', 'Hawaii': 'Honolulu', 'Idaho': 'Boise', 'Illinois':
+   'Springfield', 'Indiana': 'Indianapolis', 'Iowa': 'Des Moines', 'Kansas':
+   'Topeka', 'Kentucky': 'Frankfort', 'Louisiana': 'Baton Rouge', 'Maine':
+   'Augusta', 'Maryland': 'Annapolis', 'Massachusetts': 'Boston', 'Michigan':
+   'Lansing', 'Minnesota': 'Saint Paul', 'Mississippi': 'Jackson', 'Missouri':
+   'Jefferson City', 'Montana': 'Helena', 'Nebraska': 'Lincoln', 'Nevada':
+   'Carson City', 'New Hampshire': 'Concord', 'New Jersey': 'Trenton', 'New
+   Mexico': 'Santa Fe', 'New York': 'Albany', 'North Carolina': 'Raleigh',
+   'North Dakota': 'Bismarck', 'Ohio': 'Columbus', 'Oklahoma': 'Oklahoma City',
+   'Oregon': 'Salem', 'Pennsylvania': 'Harrisburg', 'Rhode Island': 'Providence',
+   'South Carolina': 'Columbia', 'South Dakota': 'Pierre', 'Tennessee':
+   'Nashville', 'Texas': 'Austin', 'Utah': 'Salt Lake City', 'Vermont':
+   'Montpelier', 'Virginia': 'Richmond', 'Washington': 'Olympia', 'West
+   Virginia': 'Charleston', 'Wisconsin': 'Madison', 'Wyoming': 'Cheyenne'}
+13/2:
+capitals = {'Alabama': 'Montgomery', 'Alaska': 'Juneau', 'Arizona': 'Phoenix',
+   'Arkansas': 'Little Rock', 'California': 'Sacramento', 'Colorado': 'Denver',
+   'Connecticut': 'Hartford', 'Delaware': 'Dover', 'Florida': 'Tallahassee',
+   'Georgia': 'Atlanta', 'Hawaii': 'Honolulu', 'Idaho': 'Boise', 'Illinois':
+   'Springfield', 'Indiana': 'Indianapolis', 'Iowa': 'Des Moines', 'Kansas':
+   'Topeka', 'Kentucky': 'Frankfort', 'Louisiana': 'Baton Rouge', 'Maine':
+   'Augusta', 'Maryland': 'Annapolis', 'Massachusetts': 'Boston', 'Michigan':
+   'Lansing', 'Minnesota': 'Saint Paul', 'Mississippi': 'Jackson', 'Missouri':
+   'Jefferson City', 'Montana': 'Helena', 'Nebraska': 'Lincoln', 'Nevada':
+   'Carson City', 'New Hampshire': 'Concord', 'New Jersey': 'Trenton', 'New Mexico': 'Santa Fe', 'New York': 'Albany', 'North Carolina': 'Raleigh',
+   'North Dakota': 'Bismarck', 'Ohio': 'Columbus', 'Oklahoma': 'Oklahoma City',
+   'Oregon': 'Salem', 'Pennsylvania': 'Harrisburg', 'Rhode Island': 'Providence',
+   'South Carolina': 'Columbia', 'South Dakota': 'Pierre', 'Tennessee':
+   'Nashville', 'Texas': 'Austin', 'Utah': 'Salt Lake City', 'Vermont':
+   'Montpelier', 'Virginia': 'Richmond', 'Washington': 'Olympia', 'West
+   Virginia': 'Charleston', 'Wisconsin': 'Madison', 'Wyoming': 'Cheyenne'}
+13/3:
+capitals = {'Alabama': 'Montgomery', 'Alaska': 'Juneau', 'Arizona': 'Phoenix',
+   'Arkansas': 'Little Rock', 'California': 'Sacramento', 'Colorado': 'Denver',
+   'Connecticut': 'Hartford', 'Delaware': 'Dover', 'Florida': 'Tallahassee',
+   'Georgia': 'Atlanta', 'Hawaii': 'Honolulu', 'Idaho': 'Boise', 'Illinois':
+   'Springfield', 'Indiana': 'Indianapolis', 'Iowa': 'Des Moines', 'Kansas':
+   'Topeka', 'Kentucky': 'Frankfort', 'Louisiana': 'Baton Rouge', 'Maine':
+   'Augusta', 'Maryland': 'Annapolis', 'Massachusetts': 'Boston', 'Michigan':
+   'Lansing', 'Minnesota': 'Saint Paul', 'Mississippi': 'Jackson', 'Missouri':
+   'Jefferson City', 'Montana': 'Helena', 'Nebraska': 'Lincoln', 'Nevada':
+   'Carson City', 'New Hampshire': 'Concord', 'New Jersey': 'Trenton', 'New Mexico': 'Santa Fe', 'New York': 'Albany', 'North Carolina': 'Raleigh',
+   'North Dakota': 'Bismarck', 'Ohio': 'Columbus', 'Oklahoma': 'Oklahoma City',
+   'Oregon': 'Salem', 'Pennsylvania': 'Harrisburg', 'Rhode Island': 'Providence',
+   'South Carolina': 'Columbia', 'South Dakota': 'Pierre', 'Tennessee':
+   'Nashville', 'Texas': 'Austin', 'Utah': 'Salt Lake City', 'Vermont':
+   'Montpelier', 'Virginia': 'Richmond', 'Washington': 'Olympia', 'West Virginia': 'Charleston', 'Wisconsin': 'Madison', 'Wyoming': 'Cheyenne'}
+13/4: capitals
+13/5: list(capitals.keys())
+13/6: import random
+13/7: random.shuffle(states)
+13/8: states
+13/9:
+capitals = {'Alabama': 'Montgomery', 'Alaska': 'Juneau', 'Arizona': 'Phoenix',
+   'Arkansas': 'Little Rock', 'California': 'Sacramento', 'Colorado': 'Denver',
+   'Connecticut': 'Hartford', 'Delaware': 'Dover', 'Florida': 'Tallahassee',
+   'Georgia': 'Atlanta', 'Hawaii': 'Honolulu', 'Idaho': 'Boise', 'Illinois':
+   'Springfield', 'Indiana': 'Indianapolis', 'Iowa': 'Des Moines', 'Kansas':
+   'Topeka', 'Kentucky': 'Frankfort', 'Louisiana': 'Baton Rouge', 'Maine':
+   'Augusta', 'Maryland': 'Annapolis', 'Massachusetts': 'Boston', 'Michigan':
+   'Lansing', 'Minnesota': 'Saint Paul', 'Mississippi': 'Jackson', 'Missouri':
+   'Jefferson City', 'Montana': 'Helena', 'Nebraska': 'Lincoln', 'Nevada':
+   'Carson City', 'New Hampshire': 'Concord', 'New Jersey': 'Trenton', 'New Mexico': 'Santa Fe', 'New York': 'Albany', 'North Carolina': 'Raleigh',
+   'North Dakota': 'Bismarck', 'Ohio': 'Columbus', 'Oklahoma': 'Oklahoma City',
+   'Oregon': 'Salem', 'Pennsylvania': 'Harrisburg', 'Rhode Island': 'Providence',
+   'South Carolina': 'Columbia', 'South Dakota': 'Pierre', 'Tennessee':
+   'Nashville', 'Texas': 'Austin', 'Utah': 'Salt Lake City', 'Vermont':
+   'Montpelier', 'Virginia': 'Richmond', 'Washington': 'Olympia', 'West Virginia': 'Charleston', 'Wisconsin': 'Madison', 'Wyoming': 'Cheyenne'}
+13/10: list(capitals.keys())
+13/11: states=list(capitals.keys())
+13/12: random.shuffle(states)
+13/13: print(states)
+13/14:
+for questionNum in range(50):
+
+        # Get right and wrong answers.
+        correctAnswer = capitals[states[questionNum]]
+        wrongAnswers = list(capitals.values())
+        del wrongAnswers[wrongAnswers.index(correctAnswer)]
+        wrongAnswers = random.sample(wrongAnswers, 3)
+        answerOptions = wrongAnswers + [correctAnswer]
+        random.shuffle(answerOptions)
+13/15: correctAnswer
+13/16: wrongAnswers
+13/17: ansOptions
+13/18: answerOptions
+13/19: states[questionNum]
+13/20: questionNum
+14/1: import shutil, os
+14/2: os.chdir('C:\\')
+14/3: shutil.copy('C:\\spam.txt', 'C:\\delicious')
+14/4: os.chdir(c:\\cygwin64)
+14/5: os.chdir('c:\\cygwin64')
+14/6: ls
+14/7: shutil.copy('C:\\cygwin64\\emacs.bat', 'C:\\delicious')
+15/1: import os
+15/2: os.getcwd()
+15/3: os.chdir('c:/users/ray/documents/rojects/python')
+15/4: os.chdir('c:/users/ray/documents/projects/python')
+15/5: os.getcwd()
+15/6: import send2trash
+15/7: baconFile = open('bacon.txt', 'a') # creates the file
+15/8: baconFile.write('Bacon is not a vegetable.')
+15/9: baconFile.close()
+15/10: send2trash.send2trash('bacon.txt')
+15/11:
+for folderName, subfolders, filenames in os.walk('C:\\delicious'):
+    print('The current folder is ' + folderName)
+
+    for subfolder in subfolders:
+        print('SUBFOLDER OF ' + folderName + ': ' + subfolder)
+    for filename in filenames:
+        print('FILE INSIDE ' + folderName + ': '+ filename)
+
+    print('')
+15/12: import zipfile
+15/13: os.chdir('c:\\downloads')
+15/14: os.chdir('c:\\users\ray\down')
+15/15: os.chdir('c:\\users\ray\downloads')
+15/16: ls
+15/17: import shutil
+15/18: shutil.move('C:\\bacon.txt', 'C:\\eggs')
+15/19: shutil.move('spam.txt', 'c:\\does_not_exist\\eggs\\ham')
+15/20: os.get
+15/21: os.getcwd()
+15/22:
+for filename in os.listdir():
+    if filename.endswith('.rxt'):
+        print(filename)
+15/23:
+for filename in os.listdir():
+    if filename.endswith('.txt'):
+        print(filename)
+15/24: %history -g -f testhistory.txt
+15/25: shutil.move('testhistory.txt', 'testhistory.bak')
+15/26: shutil.move('hello.txt', 'hello.bak')
+15/27:
+for filename in os.listdir():
+    if filename.endswith('.txt'):
+        print(filename)
+15/28: shutil.move('sonnet29.txt', 'sonnet29.bak')
+15/29:
+for filename in os.listdir():
+    if filename.endswith('.txt'):
+        print(filename)
+15/30:
+for filename in os.listdir():
+    if filename.endswith('.txt'):
+        send2trash.send2trash(filename)
+15/31:
+for filename in os.listdir():
+    if filename.endswith('.txt'):
+        print(filename)
+15/32: shutil.move('sonnet29.bak', 'sonnet29.txt')
+15/33: shutil.move('hello.bak', 'hello.txt')
+15/34: shutil.move('testhistory.bak', 'testhistory.txt')
+15/35:
+for filename in os.listdir():
+    if filename.endswith('.txt'):
+        print(filename)
+15/36: %history -g -f testhistory.txt
+15/37:
+for folderName, subfolders, filenames in os.walk('C:\\delicious'):
+    print('The current folder is ' + folderName)
+
+    for subfolder in subfolders:
+        print('SUBFOLDER OF ' + folderName + ': ' + subfolder)
+    for filename in filenames:
+        print('FILE INSIDE ' + folderName + ': '+ filename)
+
+    print('')
+15/38: %history -g -f testhistory.txt
+15/39: import zipfile, os
+15/40: os.chdir('c:/users/ray/downloads')
+15/41: os.getcwd()
+15/42: ls
+15/43:
+for filename in os.listdir():
+    if filename.endswith('.zip'):
+        print(filename)
+15/44: ctagsZip=zipfile.ZipFile('ctags58.zip')
+15/45: ctagsZip.namelist()
+15/46: ctagsInfo=ctagsZip.getinfo('ctags.exe')
+15/47: ctagsInfo=ctagsZip.getinfo('ctags58/ctags.exe')
+15/48: ctagsInfo.filesize
+15/49: ctagsInfo=ctagsZip.getinfo('ctags.exe')
+15/50: ctagsInfo=ctagsZip.getinfo('ctags58/ctags.exe')
+15/51: ctagsInfo.file_size
+15/52: ctagsInfo.compress_size
+15/53:
+ 'Compressed file is %sx smaller!' % (round(spamInfo.file_size / spamInfo
+   .compress_size, 2))
+15/54:
+ 'Compressed file is %sx smaller!' % (round(ctagInfo.file_size / ctagInfo
+   .compress_size, 2))
+15/55:
+ 'Compressed file is %sx smaller!' % (round(ctagsInfo.file_size / ctagsInfo
+   .compress_size, 2))
+15/56: ctagsZip.close
+15/57: ctagsZip.close()
+15/58: import re
+15/59: aLongString=re.compile(r'^(.*?))
+15/60: aLongString=re.compile(r'^(.*?)$)
+15/61: aLongString=re.compile(r'^(.*?)$')
+15/62: aLongString.findall('This is a test')
+15/63: import pyperclip
+15/64: text=str(pyperclip.paste())
+15/65: matches=[]
+15/66:
+for groups in aLongString.findall(text):
+    matches.append(groups[0])
+15/67: print(matches)
+15/68: print(text)
+15/69: aLongString=re.compile(r'^(.*?)$')
+15/70:
+for groups in aLongString.findall(text):
+    matches.append(groups[0])
+15/71: text=str(pyperclip.paste())
+15/72: print(text)
+15/73: matches=[]
+15/74:
+for groups in aLongString.findall(text):
+    matches.append(groups[0])
+15/75: print(matches)
+15/76: aLongString=re.compile(r'^(.*?)$')
+15/77: aLongString.findall('MassHire Worcester Career Center has identified a new job opportunity with a company in Westboro, they are a fil')
+15/78: aLongString=re.compile(r'^(.*?)$', re.DOTALL)
+15/79:
+aLongString.findall('depetror@masshirecentralcc.com
+
+MassHireCentralCC.com
+
+Please note our new name ? MassHire Worcester Career Center, formerly Workforce Central Career Centers, part of the Massachusetts One Stop Career Centers')
+15/80: aLongString.findall('depetror@masshirecentralcc.com')
+15/81: aLongString.findall('depetror@masshirecentralcc.com\nIs a new line')
+15/82: aLongString.findall('depetror@masshirecentralcc.com')
+15/83: aLongString.findall('depetror@masshirecentralcc.com')
+15/84:
+text='MassHireCentralCC.com
+
+Please note our new name ? MassHire Worcester Career Center, formerly Workforce Central Career Centers, part of the Massachusetts One Stop Career Centers'
+15/85: text='Please note our new name ? MassHire Worcester Career Center, formerly Workforce Central Career Centers, part of the Massachusetts One Stop Career Centers'
+15/86: aLongString.findall(text)
+15/87: aLongString=re.compile(r'^(.*?)$\n*', re.DOTALL)
+15/88:
+text='MassHireCentralCC.com
+
+Please note our new name ? MassHire Worcester Career Center, formerly Workforce Central Career Centers, part of the Massachusetts One Stop Career Centers'
+15/89: text=pyperclip.paste())
+15/90: text=str(pyperclip.paste())
+15/91: text
+15/92: text=str(pyperclip.paste())
+15/93: text
+15/94: %history -g -f testhistory.txt
+15/95: import os
+15/96: os.getcwd()
+16/1: import re, os
+16/2: aLongString=re.compile(r'^(.*?)$\r\n*', re.DOTALL)
+16/3: text=str(pyperclip.paste())
+16/4: import pyperclip
+16/5: text=str(pyperclip.paste())
+16/6: text
+16/7: aLongString=re.compile(r'^(.*?)$\r\n*', re.DOTALL)
+16/8: aLongString.findall(text)
+16/9: text
+16/10: aLongString=re.compile(r'^(.*?)\r\n*?', re.DOTALL)
+16/11: aLongString.findall(text)
+16/12: capsString=re.compile(r'^([A-Z].*', re.DOTALL)
+16/13: capsString=re.compile(r'^([A-Z].*)', re.DOTALL)
+16/14: capsString.findall('THIS IS A TITLE')
+16/15: capsString.findall('this is not a title')
+16/16: capsString.findall('This is also not a Title')
+16/17: capsString=re.compile(r'^([A-Z].*?)', re.DOTALL)
+16/18: capsString.findall('THIS IS A TITLE')
+16/19: realCapsString=re.compile(r'^([^a-z].*)', re.DOTALL)
+16/20: realCapsString.findall('THIS IS A TITLE')
+16/21: realCapsString.findall('This is A TITLE')
+16/22: realCapsString=re.compile(r'^([^a-z].*$)', re.DOTALL)
+16/23: realCapsString.findall('This is A TITLE')
+16/24: realCapsString=re.compile(r'^([^a-z].*+$)')
+16/25: realCapsString=re.compile(r'^[^a-z].*+$')
+16/26: realCapsString=re.compile(r'^[^a-z].*+$')
+16/27: realCapsString=re.compile(r'^[^a-z]*+$')
+16/28: realCapsString=re.compile(r'^[A-Z]+$')
+16/29: realCapsString.findall('This is A TITLE')
+16/30: capsString.findall('THIS IS A TITLE')
+16/31: realCapsString.findall('THIS IS A TITLE')
+16/32: realCapsString=re.compile(r'^[A-Z].*$')
+16/33: realCapsString.findall('THIS IS A TITLE')
+   1: import time
+   2: time.time
+   3: time.time()
+   4: import os
+   5: os.getcwd()
+   6: os.chdir('c:/users/ray/documents/projects/python')
+   7: os.getcwd()
+   8: now=time.time()
+   9: now
+  10: round(now,2)
+  11: round(now,4)
+  12: round(now)
+  13: %history -g -f testhistory12-05-18.txt
+  14: import datetime
+  15: datetime.datetime(2015, 2, 27, 11, 10, 49, 55, 53)
+  16: datetime.datetime.now
+  17: datetime.datetime.now()
+  18: dt=datetime.datetime(2018, 12, 5, 14, 47, 56, 510424)
+  19: dt.year, dt.minute,dt.second
+  20: datetime.datetime.fromtimestamp(1000000)
+  21: datetime.datetime.fromtimestamp(time.time())
+  22: delta = datetime.timedelta(days=11, hours=10, minutes=9, seconds=8)
+  23: delta
+  24: delta.days, delta.seconds, delta.microseconds
+  25: delta.total_seconds()
+  26: str(delta)
+  27: dt = datetime.datetime.now()
+  28: dt
+  29: thousandDays = datetime.timedelta(days=1000)
+  30: dt + thousandDays
+  31: oct21st = datetime.datetime(2015, 10, 21, 16, 29, 0)
+  32: aboutThirtyYears = datetime.timedelta(days=365 * 30)
+  33: oct21st
+  34: oct21st-aboutThirtyYears
+  35: oct21st-(2*aboutThirtyYears)
+  36: oct21st = datetime.datetime(2015, 10, 21, 16, 29, 0)
+  37: oct21st.strftime('%Y/%m/%d %H:%M:%S')
+  38: oct21st.strftime("%B of '%y")
+  39: datetime.datetime.strptime('October 21, 2015', '%B %d, %Y')
+  40: datetime.datetime.strptime('2015/10/21 16:29:00', '%Y/%m/%d %H:%M:%S')
+  41: datetime.datetime.strptime("October of '15", "%B of '%y")
+  42: datetime.datetime.strptime("November of '63", "%B of '%y")
+  43: %history -g -f testhistory12-05-18A.txt
+  44: import threading
+  45:
+threadObj = threading.Thread(target=print, args=['Cats', 'Dogs', 'Frogs'],
+kwargs={'sep': ' & '})
+  46: threadObj.start()
+  47: %history -g -f testhistory12-05-18A.txt

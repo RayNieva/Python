@@ -1,0 +1,8 @@
+file = open($(A!0(Btestfileoutput.py$(A!1(B,$(A!1(Bw$(A!1(B) 
+ 
+file.write($(A!0(BHello World$(A!1(B) 
+file.write($(A!0(BThis is our new text file$(A!1(B) 
+file.write($(A!0(Band this is another line.$(A!1(B) 
+file.write($(A!0(BWhy? Because we can.$(A!1(B) 
+ 
+file.close() 

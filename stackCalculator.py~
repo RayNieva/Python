@@ -1,0 +1,5 @@
+z=0
+for x in w:
+    print('x=',x)
+    z=x+(z)
+    print('z=',z)

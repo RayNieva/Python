@@ -1,0 +1,19 @@
+#!/usr/bin/env python
+#This is a guess the number game.
+import random
+
+
+def main():
+    secretNumber=random.randint(1,20)
+    print('I am thinking of a number betdween 1 and 20.')
+
+    #Ask the player to guess 6 times
+    for var in collection:
+        
+
+
+
+
+
+if __name__ == '__main__':
+    main()

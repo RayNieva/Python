@@ -1,0 +1,24 @@
+import openpyxl
+
+#wb = openpyxl.load_workbook('C:\\Users\\rnieva\\Documents\\Projects\\API2UploadDiagrams\\LSSJobsites_002_.xlsx')
+wbDummy=openpyxl.load_workbook('C:\\Users\\rnieva\\Documents\\Projects\\API2UploadDiagrams\\TestJobsites.xlsx')
+
+#sheet = wb.get_sheet_by_name('Sheet2')
+sheet=wbDummy.get_sheet_by_name('Sheet2')
+
+for i in range(2, 4, 1):
+      # print(i, sheet.cell(row=i, column=1).value)
+       # c=(i, sheet.cell(row=i, column=1).value)
+       jobsiteid=(sheet.cell(row=i, column=1).value)
+       print(jobsiteid)
+
+# some code here writing to executable python file and close file
+
+
+# execute python file
+
+
+# log that file has been processed
+
+
+# This process will start again by virtue of top loop program using openpyx

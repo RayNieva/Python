@@ -1,0 +1,9 @@
+rem FacebookTest.py
+python Facebooktest.py
+pause
+rem Bofatest.py
+python Bofatest.py
+pause
+rem WCUCCtest.py
+python WCUCCtest.py
+pause

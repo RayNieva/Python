@@ -1,0 +1,21 @@
+#!/usr/bin/env python
+
+#This is the sample lesson program for Beautiful Soup
+
+
+import logging, bs4
+
+logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s- %(message)s')
+
+logging.debug('Start of program')
+
+
+
+
+
+def main():
+    pass
+    logging.debug('End of program')
+
+if __name__ == '__main__':
+    main()
